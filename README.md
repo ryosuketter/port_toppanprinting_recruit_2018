@@ -20,7 +20,7 @@ https://ryosuketter.github.io/port_toppanprinting_recruit_2018/dest/recruit/shin
 
 ## Enduring CSSを採用した理由
 - 共通コンポートが少ない
-- 修正したときのスタイルの影響範囲が明確なので、運用しやすい
+- 修正したときのスタイルの影響範囲が明確なので、運用しやすい
 
 ## 対応ブラウザ
 PC
