@@ -1,0 +1,202 @@
+block variables
+append variables
+	//- Required
+	- var pageTitle= "凸版印刷｜2018年度新卒採用サイト";
+	- var pageDescription= "凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+	- var pageKeywords= "test";
+	//- Optional
+	- var pageOgpTitle= "";
+	- var pageOgpImage= "test";
+	- var pageLang= "ja";
+	- var pageOgpType= "website";
+	//- Not modified
+	- var pageUrl= "index.html";
+	//- visionalist
+	- var visionalist_prm= "rc100101";
+	//- click_event
+	- var entry_prm= "rc1en100";
+	- var mypage_prm= "rc1my100";
+
+doctype html
+html(lang=pageLang)
+	head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + pageOgpType + ": http://ogp.me/ns/" + pageOgpType + "#")
+		include /_includes/_meta_n
+		//- common css
+		link(rel="stylesheet" href="assets/css/common.css")
+		link(rel="stylesheet" href="assets/css/header.css")
+		link(rel="stylesheet" href="assets/css/footer.css")
+		link(rel="stylesheet" href="assets/css/animate.css")
+		link(rel="stylesheet", href="assets/css/top.css")
+
+	body(id="top")
+		#wrap_top
+			main
+				section#top_first
+					.tit_box
+						h1
+							img(src="assets/img/top/toppan.png" alt="TOPPAN")
+						p.catch
+							span
+								img(src="assets/img/top/logo.png" alt="可能性を絞るには、早すぎる。")
+					.disc_box
+						img(src="assets/img/top/logo_discription.png" alt="可能性を絞るには、早すぎる。")
+						.disc_box__texts
+							p 想いや夢は、大事にしてほしい。
+								br
+								| けれど、可能性をただ１つに絞る必要はない。
+								br
+								| 今はまだ見えていない可能性が、世の中にはたくさんあるから。
+							p それは僕らも同じだ。
+								br
+								| あらゆる業種の顧客と仕事をし、今までにないモノやコトを創り出す。
+								br
+								| 新しい可能性をデザインし、広げ続けていく。
+							p 君たちも、僕らも、可能性を絞るにはまだまだ早い。
+					#top_first__mouse
+					.top_news
+						p What's NEW
+						ul
+							li
+								span 2017.03.01
+								//- p
+								a(href="news.html") 2018年度採用サイトをオープンしました
+								//- p
+				#top_header
+					.float_inner
+						//共通ヘッダーを後で読み込む
+						include _includes/_header_top
+				section#top_business
+					.inner
+						.top_box
+							h2(data-name="事業紹介") BUSINESS
+							.top_text
+								p 情報コミュニケーション、生活・産業、エレクトロニクス、
+									br
+									| 研究開発、印刷テクノロジー、製品について
+								p.btn
+									a(href="./business/index.html") 事業紹介
+				section#top_member
+					.inner
+						h2(data-name="社員紹介") MEMBER
+						.slide_wrap
+							ul.slider
+								li
+									a(href="./member/komatsuka.html")
+										img.pc-only(src="assets/img/top/member01.jpg",alt="駒塚 もも")
+										img.sp-only(src="assets/img/top/member01_sp.jpg",alt="駒塚 もも")
+										.top_prof
+											div
+												p.top_prof_depart 情報コミュニケーション事業本部
+												p.top_prof_name 駒塚 もも
+												p.top_prof_en Momo komatsuka
+								li
+									a(href="./member/terabayashi.html")
+										img.pc-only(src="assets/img/top/member02.jpg",alt="寺林 真綸")
+										img.sp-only(src="assets/img/top/member02_sp.jpg",alt="寺林 真綸")
+										.top_prof
+											div
+												p.top_prof_depart 情報コミュニケーション事業本部
+												p.top_prof_name 寺林 真綸
+												p.top_prof_en Marin Terabayashi
+								li
+									a(href="./member/yamazaki.html")
+										img.pc-only(src="assets/img/top/member03.jpg",alt="山﨑 拓")
+										img.sp-only(src="assets/img/top/member03_sp.jpg",alt="山﨑 拓")
+										.top_prof
+											div
+												p.top_prof_depart 生活・産業事業本部
+												p.top_prof_name 山﨑 拓
+												p.top_prof_en Taku Yamazaki
+								li
+									a(href="./member/ishiguro.html")
+										img.pc-only(src="assets/img/top/member04.jpg",alt="石黒 庸平")
+										img.sp-only(src="assets/img/top/member04_sp.jpg",alt="石黒 庸平")
+										.top_prof
+											div
+												p.top_prof_depart エレクトロニクス事業本部
+												p.top_prof_name 石黒 庸平
+												p.top_prof_en Youhei Ishiguro
+								li
+									a(href="./member/karikawa.html")
+										img.pc-only(src="assets/img/top/member05.jpg",alt="刈川 直紀")
+										img.sp-only(src="assets/img/top/member05_sp.jpg",alt="刈川 直紀")
+										.top_prof
+											div
+												p.top_prof_depart 情報コミュニケーション事業本部
+												p.top_prof_name 刈川 直紀
+												p.top_prof_en Naoki Karikawa
+								li
+									a(href="./member/antoku.html")
+										img.pc-only(src="assets/img/top/member06.jpg",alt="安徳 知博")
+										img.sp-only(src="assets/img/top/member06_sp.jpg",alt="安徳 知博")
+										.top_prof
+											div
+												p.top_prof_depart 情報コミュニケーション事業本部
+												p.top_prof_name 安徳 知博
+												p.top_prof_en Chihiro Antoku
+								li
+									a(href="./member/nishigaki.html")
+										img.pc-only(src="assets/img/top/member07.jpg",alt="西垣 操")
+										img.sp-only(src="assets/img/top/member07_sp.jpg",alt="西垣 操")
+										.top_prof
+											div
+												p.top_prof_depart 生活・産業事業本部
+												p.top_prof_name 西垣 操
+												p.top_prof_en Misao Nishigaki
+								//- li
+								//- 	a(href="./member/araki.html")
+								//- 		img.pc-only(src="assets/img/top/member08.jpg",alt="荒木 桃子")
+								//- 		img.sp-only(src="assets/img/top/member08_sp.jpg",alt="荒木 桃子")
+								//- 		.top_prof
+								//- 			div
+								//- 				p.top_prof_depart 業開発・研究本部
+								//- 				p.top_prof_name 荒木 桃子
+								//- 				p.top_prof_en Momoko Araki
+				section#top_project
+					.inner
+						img.top_project__obj01.parallax(src="assets/img/top/project_object01.png")
+						img.top_project__obj02.parallax(src="assets/img/top/project_object02.png")
+						img.top_project__obj03.parallax(src="assets/img/top/project_object03.png")
+						h2(data-name="プロジェクトストーリー") PROJECT STORY
+						.project_list
+							ul
+								li.item01
+									a.item_photo(href="./story/01.html")
+										img(src="assets/img/top/project01.png",alt="リポビタンD×ラブライブ！")
+									p.item_name
+										a(href="./story/01.html") リポビタンD×ラブライブ！
+								li.item02
+									a.item_photo(href="./story/02.html")
+										img(src="assets/img/top/project02.png",alt="TossSala®販促パッケージ")
+									p.item_name
+										a(href="./story/02.html") TossSala®販促パッケージ
+
+				section#top_info
+					.inner
+						img.top_info__obj01.parallax(src="assets/img/top/info_object01.png")
+						img.top_info__obj02.parallax(src="assets/img/top/info_object02.png")
+						img.top_info__obj03.parallax(src="assets/img/top/info_object03.png")
+						img.top_info__obj04.parallax(src="assets/img/top/info_object04.png")
+						ul
+							li.btn
+								a(href="./company/index.html") 企業情報
+							li.btn
+								a(href="./recruit/index.html") 採用情報
+				include /_includes/_scrollup_top
+				include /_includes/_footer_top
+		script(src="assets/js/top/jquery-2.2.4.min.js")
+		script(src="assets/js/top/fastclick.js")
+		script(src="assets/js/top/slick.min.js")
+
+		script(src="assets/js/top/three.min.js")
+		script(src="assets/js/top/tween.min.js")
+		script(src="assets/js/top/FirstPersonControls.js")
+		script(src="assets/js/top/MorphAnimMesh.js")
+		script(src="assets/js/top/OrbitControls.js")
+
+		script(src="assets/js/top/script.js")
+		script(src="assets/js/wow.min.js")
+		script.
+			new WOW().init();
+
+		include /_includes/_visionalist

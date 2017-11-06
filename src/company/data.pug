@@ -1,0 +1,155 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "データで見るトッパン｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "データで見るトッパンのご紹介。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "企業情報,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "company/data.html";
+  //- visionalist
+  - var visionalist_prm= "rc100120";
+
+block content
+  // contents
+  .company-d-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../company/index.html') 企業情報
+            | &gt;
+          li
+            a(href='data.html ') データでみるトッパン
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h2 DATA
+        .key_visual-inner-txt-wrapper-sub
+          p データでみるトッパン
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンの様々なデータをインフォグラフィックでご紹介します。
+
+  .appear-low
+    .business-contents-wrapper.company_wrapper.fiu.animated
+      .company-data-content
+        .company-data-content-item.company-data-content-item--blue.company-data-content-item--short
+          h3.company-data-content-item-title 創業年
+          p.company-data-content-item-emp
+            span.company-data-content-item-emp--numeric 1900
+            | 年
+          p.company-data-content-item-txt 100年以上にわたる多様なビジネスへの挑戦の中で培った、独自の技術・ノウハウと、クライアントとの強固な信頼関係がトッパンの強みです。
+          .company-data-content-item-img
+            img(src='../assets/img/company/company-d-icon-01.png', class='campany-d-show_pc')
+            img(src='../assets/img/company/sp-company-d-icon-01.png', class='campany-d-show_sp')
+        .company-data-content-group
+          .company-data-content-item.company-data-content-item--white.company-data-earnings-content
+            h3.company-data-content-item-title 売上高(連結)
+            p.company-data-content-item-emp
+              span.company-data-content-item-emp--numeric 14,746
+              | 億円
+            p.company-data-content-item-txt.company-data-earnings-txt トッパンの売上高は印刷業界No.1。情報・文化の担い手として、ふれあい豊かな暮らしに貢献しています。
+            .company-data-content-item-img.company-data-earnings-img
+              img(src='../assets/img/company/company-d-icon-02.png', class='campany-d-show_pc')
+              img(src='../assets/img/company/sp-company-d-icon-02.png', class='campany-d-show_sp')
+
+          .company-data-content-item.company-data-content-item--dark_blue.campany-data-office-content
+            h3.company-data-content-item-title.company-data-content-item-title--inline 事業所数
+            p.company-data-content-item-emp
+              span.company-data-content-item-emp--numeric 155
+              | 拠点
+            p.company-data-content-item-txt.campany-data-office-txt 国内79拠点（本社、総合研究所、営業所43、生産拠点34）、国外76拠点（現地法人73、支社1、駐在員事務所2）から成ります。
+            .company-data-content-item-img.campany-data-office-img
+              img(src='../assets/img/company/company-d-icon-03.png', class='campany-d-show_pc')
+              img(src='../assets/img/company/sp-company-d-icon-03.png', class='campany-d-show_sp')
+      .company-data-content
+        .company-data-content-item.company-data-content-item--white.company-data-division_sales-content
+          h3.company-data-content-item-title 事業分野別売上高(連結)
+          p.company-data-content-item-txt.company-data-division_sales-txt ビッグデータやデジタルメディア等を活用したマーケティング支援や、高度なセキュリティ体制を活かしたＢＰＯ事業など、特に情報コミュニケーション分野において実績を上げています。
+          .company-data-content-item-img.company-data-content-item-img--multiple.company-data-division_sales-img
+            img(src='../assets/img/company/sp-company-d-icon-04.png')
+            dl.company-data-content-item-img-numeric_txt--1
+              dt.company-data-content-item-img-numeric_txt-title エレクトロニクス
+              dd.company-data-content-item-img-numeric_txt-prm
+                span.company-data-content-item-img-numeric_txt-prm--emp 1,526
+                | 億円(10%)
+            dl.company-data-content-item-img-numeric_txt--2
+              dt.company-data-content-item-img-numeric_txt-title 生活・産業
+              dd.company-data-content-item-img-numeric_txt-prm
+                span.company-data-content-item-img-numeric_txt-prm--emp 3,961
+                | 億円(27%)
+            dl.company-data-content-item-img-numeric_txt--3
+              dt.company-data-content-item-img-numeric_txt-title 情報コミュニケーション
+              dd.company-data-content-item-img-numeric_txt-prm
+                span.company-data-content-item-img-numeric_txt-prm--emp 9,258
+                | 億円(63%)
+      .company-data-content
+        .company-data-content-item.company-data-content-item--blue.company-data-content-item--half.company-data-worker-content
+          .company-data-content-item-img.company-data-worker-img-a
+            img(src='../assets/img/company/company-d-icon-05.png', class='campany-d-show_pc')
+          h3.company-data-content-item-title.company-data-worker-item-title 従業員数(連結)
+          p.company-data-content-item-emp
+            span.company-data-content-item-emp--numeric 46,705
+            | 名
+          p.company-data-content-item-txt.company-data-worker-content-item-txt トッパンには幅広い事業分野で活躍する多彩な人財が揃っています。それぞれの個性や経験・ノウハウを組み合わせながら、日々仕事に取り組んでいます。
+          .company-data-content-item-img.company-data-worker-img-b
+            img(src='../assets/img/company/company-d-icon-05.png', class='campany-d-show_pc')
+            img(src='../assets/img/company/sp-company-d-icon-05.png', class='campany-d-show_sp')
+        .company-data-content-item.company-data-content-item--gray.company-data-content-item--half.company-data-operating_income-content
+          h3.company-data-content-item-title.company-data-profit-content-item-title 営業利益(連結)
+          p.company-data-content-item-emp.company-data-profit-content-item-txt
+            span.company-data-content-item-emp--numeric 485
+            | 億円
+          p.company-data-content-item-txt.company-data-operating_income-txt 売上高と共に、業界No.1。既存の枠にとらわれることなく、新たな事業領域への挑戦を常に続けています。
+          .company-data-content-item-img.company-data-operating_income-img
+            img(src='../assets/img/company/sp-company-d-icon-06.png')
+
+      .company-data-content
+        .company-data-content-item.company-data-content-item--white.company-data-holiday-content
+          h3.company-data-content-item-title 年次有給休暇の平均取得日数・率
+          .company-data-content-item-emp
+            p.company-data-content-item-emp
+              span.company-data-content-item-emp--numeric 8.6
+              | 日(45.1%)
+            p.company-data-content-item-emp--mini ※平均取得率＝平均取得日数/平均付与日数
+          p.company-data-content-item-txt.company-data-holiday-txt 年次有給休暇は1年につき最大20日間付与されます。誕生日などの記念日にあわせて取得する「メモリアル休暇」など、会社全体でワーク・ライフ・バランスの推進を図っています。
+          .company-data-content-item-img.company-data-holiday-img
+            img(src='../assets/img/company/sp-company-d-icon-07.png')
+      .company-data-content
+        .company-data-content-item.company-data-content-item--blue.company-data-childcare-content
+          h3.company-data-content-item-title.company-data-childcare-title 産前産後・育児休業の取得者数
+          p.company-data-content-item-emp_txt.company-data-sub-title 産前産後
+          p.company-data-content-item-emp.company-data-content-item-emp--numeric--1
+            span.company-data-content-item-emp--numeric 85
+            | 名
+          p.company-data-sub-title.company-data-sub-title--2 育児
+          p.company-data-content-item-emp
+            span.company-data-content-item-emp--numeric 295
+            | 名
+            span.company-data-content-item-emp--small (男性160名)
+          p.company-data-content-item-txt.company-data-childcare-txt 育児休業や勤務短縮などの制度拡充はもちろんのこと、休業中の社員のケアや、仕事との両立に関するノウハウの共有など、「働く意志を支援する」という考え方に基づき環境づくりを進めています。
+          .company-data-content-item-img.company-data-childcare-img
+            img(src='../assets/img/company/sp-company-d-icon-08.png')
+
+  .business-transition-link-wrapper
+    .business-transition-link
+      a.business-transition-link-prev-a(href='./history.html')
+        .business-transition-link-prev
+          i.fa.fa-angle-double-left(aria-hidden='true')
+          p トッパンの歩みを知る
+      a.business-transition-link-top-a(href='../company/index.html')
+        .business-transition-link-top
+          i.fi-thumbnails
+          p 会社紹介のトップに戻る
+      a.business-transition-link-prev-a(href='./about.html')
+        .business-transition-link-prev
+          i.fa.fa-angle-double-right(aria-hidden='true')
+          p 会社概要を知る
+
+  // /contents

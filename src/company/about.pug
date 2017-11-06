@@ -1,0 +1,85 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "会社概要｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "会社概要のご紹介。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "企業情報,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "company/about.html";
+  //- visionalist
+  - var visionalist_prm= "rc100121";
+
+block content
+  // contents
+  .company-a-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='index.html') 企業情報
+            | &gt;
+          li
+            a(href='about.html') 会社概要
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 ABOUT US
+        .key_visual-inner-txt-wrapper-sub
+          p 会社概要
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンについてご紹介します。
+
+  .contents-width
+    .appear.company_about_wrapper
+      .fiu.animated.company-about-content
+        .company_heading
+          h2.company_heading__title 会社概要
+        .company_about_content.company_about_simple
+          table.company_about_table
+            tr
+              th.company_about_table__th 社名
+              td.company_about_table__td 凸版印刷株式会社
+            tr
+              th.company_about_table__th 所在地
+              td.company_about_table__td
+                | 〒101-0024 東京都千代田区 神田和泉町1番地
+                br
+                | TEL:03(3835)5111
+            tr
+              th.company_about_table__th 創業
+              td.company_about_table__td 明治33年(1900年)
+            tr
+              th.company_about_table__th 代表者
+              td.company_about_table__td 代表取締役社長 金子眞吾
+            tr
+              th.company_about_table__th 資本金
+              td.company_about_table__td 104,986(百万円) (2016年3月末現在)
+            tr
+              th.company_about_table__th 業績
+              td.company_about_table__td 連結売上高　1,474,682(百万円)(2016年3月末現在)
+            tr
+              th.company_about_table__th 従業員数
+              td.company_about_table__td 連結 46,705名(2016年3月末現在)
+            tr
+              th.company_about_table__th 事業内容
+              td.company_about_table__td トッパンは、「印刷テクノロジー」をベースに「情報コミュニケーション事業分野」、「生活・産業事業分野」および「エレクトロニクス事業分野」の3分野にわたり幅広い事業活動を展開しております。
+  .business-transition-link-wrapper
+    .business-transition-link
+      a.business-transition-link-prev-a(href='./data.html')
+        .business-transition-link-prev
+          i.fa.fa-angle-double-left(aria-hidden='true')
+          p データで見るトッパンを知る
+      a.business-transition-link-top-a(href='index.html')
+        .business-transition-link-top
+          i.fi-thumbnails
+          p 会社概要のトップに戻る
+      .blank
+
+  // /contents

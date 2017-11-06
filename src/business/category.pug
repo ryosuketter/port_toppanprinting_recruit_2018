@@ -1,0 +1,93 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "事業分野｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "事業分野のご紹介。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "business/category.html";
+  //- visionalist
+  - var visionalist_prm= "rc100103";
+
+block content
+  // contents
+  .business-c-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../business/index.html') 事業紹介
+            | &gt;
+          li
+            a(href='#') 事業分野
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 CATEGORY
+        .key_visual-inner-txt-wrapper-sub
+          p 事業分野
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンには「情報コミュニケーション」「生活･産業」「エレクトロニクス」の3つの事業分野があります。
+
+  .contents-width
+    .appear
+      .business-c-contents-wrapper.fiu.animated
+        .business-c-contents-wrapper-category
+          img(src='../assets/img/business/business-c-contents-category01.png', alt='情報コミュニケーション' class="pc")
+          img(src='../assets/img/business/sp-business-c-contents-category01.png', alt='情報コミュニケーション' class="sp")
+          .business-c-contents-wrapper-category-txt-wrapper
+            .business-c-contents-wrapper-category-txt-wrapper-hd
+              span.category-label CATEGORY 01
+              h2 情報コミュニケーション
+            .business-c-contents-wrapper-category-txt-wrapper-txt
+              p 雑誌や書籍、カタログ、チラシから有価証券、ICカード、Web、システム開発まで、人々のコミュニケーションに役立つ製品・サービスを提供しています。長年にわたり培ってきたトッパンのモノつくりの力を最大限に活かして「情報の価値を高める」「情報を効果的に届ける」ソリューションを提供しています。
+              a.business-category-relation-btn(href='http://www.toppan.co.jp/products_service/information.html' target="_blank") 関連サイトを見る
+
+    .appear
+      .business-c-contents-wrapper_02.fiu.animated
+        .business-c-contents-wrapper-category
+          img(src='../assets/img/business/business-c-contents-category02.png', alt='情報コミュニケーション' class="pc")
+          img(src='../assets/img/business/sp-business-c-contents-category02.png', alt='情報コミュニケーション' class="sp")
+          .business-c-contents-wrapper-category-txt-wrapper
+            .business-c-contents-wrapper-category-txt-wrapper-hd
+              span.category-label CATEGORY 02
+              h2 生活・産業
+            .business-c-contents-wrapper-category-txt-wrapper-txt
+              p 食品やトイレタリー、医療医薬品などあらゆる分野のパッケージに加え、透明バリアフィルムや建装材などを扱います。生活者の「医・食・住」に関わる様々なニーズに対応し、快適で安心な生活環境づくりに直結した製品・サービスを展開しています。
+              a.business-category-relation-btn(href='http://www.toppan.co.jp/products_service/living-industry.html' target="_blank") 関連サイトを見る
+    .appear
+      .business-c-contents-wrapper_03.fiu.animated
+        .business-c-contents-wrapper-category
+          img(src='../assets/img/business/business-c-contents-category03.png', alt='情報コミュニケーション' class="pc")
+          img(src='../assets/img/business/sp-business-c-contents-category03.png', alt='情報コミュニケーション' class="sp")
+          .business-c-contents-wrapper-category-txt-wrapper
+            .business-c-contents-wrapper-category-txt-wrapper-hd
+              span.category-label CATEGORY 03
+              h2 エレクトロニクス
+            .business-c-contents-wrapper-category-txt-wrapper-txt
+              p 液晶ディスプレイの部品となるカラーフィルタ、スマートフォンのタッチパネル、半導体の製造に欠かせないフォトマスクなどエレクトロニクス製品を設計・製造しています。印刷技術を専門分野に応用した独自の技術力で、日々革新が進む業界をリードしています。
+              a.business-category-relation-btn(href='http://www.toppan.co.jp/products_service/electronics.html' target="_blank") 関連サイトを見る
+  .business-transition-link-wrapper
+    .business-transition-link
+      .blank
+      a.business-transition-link-top-a(href='../business/index.html')
+        .business-transition-link-top
+          i.fi-thumbnails
+          p 事業紹介の
+            br.sp_only
+            |トップに戻る
+      a.business-transition-link-next-a(href='../business/products.html')
+        .business-transition-link-next
+          i.fa.fa-angle-double-right(aria-hidden='true')
+          p ものつくり・
+            br
+          | ことつくりを知る
+
+  // /contents

@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+  // 16px x 62.5% = 10pxに相当
+  // 1.2remで12px
+  // http://html5-css3.jp/tips/css3-rem.html
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family:Arial, "游ゴシック","YuGothic",'ヒラギノ角ゴ ProN W3',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  //切れ目が見えた時の背景画像
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+@media screen and (min-width: 800px) {
+  br.sp_only {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  br.pc_only {
+    display: none;
+  }
+}
+
+// コンテンツ幅
+.contents-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .contents-width {
+    padding: 0 4%;
+    margin: 0 auto;
+  }
+}
+
+// footer上の平行リンクのスタイル
+.business-transition-link {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 300px;
+  height: 300px;
+  a {
+    display: table-cell;
+    color: #006dc3;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.4s;
+
+    &:visited {
+      color: #006dc3;
+    }
+    &:link {
+      color: #006dc3;
+    }
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .business-transition-link-prev-a,
+  .business-transition-link-next-a,
+  .blank {
+    width: 40%;
+  }
+
+  .business-transition-link-top-a {
+    width: 20%;
+  }
+
+  .business-transition-link-prev-a,
+  .business-transition-link-next-a {
+    &:hover {
+      background-color: #4496d7;
+    }
+  }
+
+  .business-transition-link-top-a {
+    &:hover {
+      background-color: #75b6ea;
+    }
+  }
+
+  .fi-thumbnails {
+    font-size: 45px;
+  }
+  .fa {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  // footer上の平行リンクのスタイル
+  .business-transition-link {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 200px;
+    font-size: 12px;
+
+    a {
+      display: table-cell;
+      color: #006dc3;
+      text-decoration: none;
+      display: table-cell;
+      vertical-align: middle;
+      transition: 0.3s;
+
+      &:visited {
+        color: #006dc3;
+      }
+      &:link {
+        color: #006dc3;
+      }
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      padding: 0 10px;
+    }
+
+    .business-transition-link-prev-a,
+    .business-transition-link-next-a,
+    .blank {
+      width: 33%;
+    }
+
+    .business-transition-link-top-a {
+      width: 33%;
+    }
+
+    .business-transition-link-prev-a,
+    .business-transition-link-next-a {
+      &:hover {
+        background-color: #4496d7;
+      }
+    }
+
+    .business-transition-link-top-a {
+      &:hover {
+        background-color: #75b6ea;
+      }
+    }
+
+    .fi-thumbnails {
+      font-size: 45px;
+    }
+    .fa {
+      font-size: 50px;
+    }
+  }
+}

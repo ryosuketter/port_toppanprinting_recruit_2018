@@ -1,0 +1,93 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "企業情報｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "企業情報はこちらから。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "企業情報,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "company/index.html";
+  //- visionalist
+  - var visionalist_prm= "rc100118";
+
+block content
+  // contents
+  .company-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='index.html') 企業情報
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 COMPANY
+        .key_visual-inner-txt-wrapper-sub
+          p 企業情報
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンの企業情報をご紹介します。
+  .contents-width
+    .appear
+      .business-contents-wrapper.company_wrapper.fiu.animated
+        .business-contents-category
+          a(href='../company/history.html')
+            img(src='../assets/img/company/company-i-01.png', class="pc")
+            img(src='../assets/img/company/sp-company-i-01.png', class="sp")
+            .txt-wrapper-up
+              h3 トッパンの歩み
+              p トッパンの歴史について
+        .business-contents-bottom
+          .business-contents-products
+            a(href='../company/data.html')
+              img(src='../assets/img/company/company-i-02.png', class="pc")
+              img(src='../assets/img/company/sp-company-i-02.png', class="sp")
+              .txt-wrapper
+                h3 データで見るトッパン
+                p トッパンのさまざまなデータについて
+          .business-contents-research-and-development
+            a(href='../company/about.html')
+              img(src='../assets/img/company/company-i-03.png', class="pc")
+              img(src='../assets/img/company/sp-company-i-03.png', class="sp")
+              .txt-wrapper
+                h3 会社概要
+                p トッパンについて
+  .contents-width
+    .company_heading
+      h2.company_heading__title 企業CM
+    .appear.conpany_movies
+      .fiu.animated
+        .business-contents-bottom
+          .story_content
+            .business-contents-products
+              a(href='https://www.youtube.com/watch?v=fjYhAmJzgGg', class='popup-iframe')
+                img(src='../assets/img/company/company-i-04.png', class="pc")
+                img(src='../assets/img/company/sp-company-i-04.png', class="sp")
+            p.movie_detail 凸版印刷　企業CM「印刷テクノロジーで、世界を変える。」
+          .story_content
+            .business-contents-research-and-development
+              a(href='https://www.youtube.com/watch?v=ms3CtFOyOQo', class='popup-iframe')
+                img(src='../assets/img/company/company-i-05.png', class="pc")
+                img(src='../assets/img/company/sp-company-i-05.png', class="sp")
+            p.movie_detail 凸版印刷　企業CMメイキング映像「印刷テクノロジーで、世界を変える。」
+      .fiu.animated
+        .business-contents-bottom
+          .story_content
+            .business-contents-products
+              a(href='https://www.youtube.com/watch?v=Op5GJGt9p-U', class='popup-iframe')
+                img(src='../assets/img/company/company-i-06.png', class="pc")
+                img(src='../assets/img/company/sp-company-i-06.png', alt='事業分野へ' class="sp")
+            p.movie_detail 凸版印刷 企業CM「IMAGINE2020 Printed By TOPPAN 新国立競技場篇」
+          .story_content
+            .business-contents-research-and-development
+              a(href='https://www.youtube.com/watch?v=_lfVCxM91ag', class='popup-iframe')
+                img(src='../assets/img/company/company-i-07.png', class="pc")
+                img(src='../assets/img/company/sp-company-i-07.png',class="sp")
+            p.movie_detail 凸版印刷 会社案内映像
+
+  // /contents

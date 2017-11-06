@@ -1,0 +1,102 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "社員紹介｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "社員紹介はこちらから。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "社員紹介,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "member/index.html";
+  //- visionalist
+  - var visionalist_prm= "rc100106";
+
+block content
+  // contents
+  .member-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../member/index.html') 社員紹介
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 MEMBER
+        .key_visual-inner-txt-wrapper-sub
+          p 社員紹介
+        .key_visual-inner-txt-wrapper-txt
+          p 個性豊かな社員へのインタビューを通じ、トッパンでの働き方をご紹介します。
+
+  .contents-width.member-contents
+    .member-contents-wrapper
+      .member-contents-inner
+        .member-contents-row-left.wow.fadeInUp
+          a(href='./terabayashi.html')
+            img(src='../assets/img/member/terabayashi.png', alt='寺林 真綸')
+            .member-contents-row-txt
+              h2 5年先、10年先を見越す、省庁担当営業
+              p 情報コミュニケーション事業本部 第十営業本部 / 営業
+              p 寺林 真綸
+        .member-contents-row-right.wow.fadeInUp(data-wow-delay='0.1s')
+          a(href='./yamazaki.html')
+            img(src='../assets/img/member/yamazaki.png', alt='山崎 拓')
+            .member-contents-row-txt
+              h2 商品開発の一端を担う食品パッケージ営業
+              p 生活・産業事業本部 パッケージソリューション事業部 第二営業本部 / 営業
+              p 山崎 拓
+    .member-contents-wrapper
+      .member-contents-inner
+        .member-contents-row-left.wow.fadeInUp
+          a(href='./komatsuka.html')
+            img(src='../assets/img/member/komatsuka.png', alt='駒塚 もも')
+            .member-contents-row-txt
+              h2 「表現」と「再現」の間でモノつくりをする出版社担当営業
+              p 情報コミュニケーション事業本部 第二営業本部 / 営業
+              p 駒塚 もも
+        .member-contents-row-right.wow.fadeInUp
+          a(href='./ishiguro.html')
+            img(src='../assets/img/member/ishiguro.png', alt='石黒 庸平')
+            .member-contents-row-txt
+              h2 成熟産業に新しい風を吹かせるエレクトロニクス営業
+              p エレクトロニクス事業本部 第一営業本部 / 営業
+              p 石黒 庸平
+    .member-contents-wrapper
+      .member-contents-inner
+        .member-contents-row-left.wow.fadeInUp
+          a(href='./nishigaki.html')
+            img(src='../assets/img/member/nishigaki.png', alt='西垣 操')
+            .member-contents-row-txt
+              h2 社内ノウハウを活かし、新分野を開拓する包材開発
+              p 生活・産業事業本部 ビジネスイノベーションセンター 開発本部 / 技術
+              p 西垣 操
+        .member-contents-row-right.wow.fadeInUp
+          a(href='./karikawa.html')
+            img(src='../assets/img/member/karikawa.png', alt='刈川 直紀')
+            .member-contents-row-txt
+              h2 生活者視点を武器にクリエイティブを生む制作ディレクター
+              p 情報コミュニケーション事業本部 トッパンアイデアセンター クリエイティブ本部 / 企画
+              p 刈川 直紀
+    .member-contents-wrapper
+      .member-contents-inner
+        //- .member-contents-row-left.wow.fadeInUp
+        //-   a(href='./araki.html')
+        //-     img(src='../assets/img/member/araki.png', alt='荒木 桃子')
+        //-     .member-contents-row-txt
+        //-       h2 事業創出を加速するメカトロニクスエンジニア
+        //-       p 事業開発・研究本部 総合研究所 基盤技術研究所 / 技術
+        //-       p 荒木 桃子
+        .member-contents-row-right.wow.fadeInUp
+          a(href='./antoku.html')
+            img(src='../assets/img/member/antoku.png', alt='安徳 知博')
+            .member-contents-row-txt
+              h2 開発未経験からシステムエンジニアを目指すプログラマー
+              p 情報コミュニケーション事業本部 ＩＣＴソリューションセンター / 技術
+              p 安徳 知博
+
+  // /contents

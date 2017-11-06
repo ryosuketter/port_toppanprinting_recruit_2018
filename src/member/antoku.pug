@@ -1,0 +1,152 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "安徳知博｜社員紹介｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "社員紹介⑥安徳知博へのインタビュー。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "社員紹介,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "member/antoku.html";
+
+  //- visionalist
+  - var visionalist_prm= "rc100114";
+
+  //-menber
+  - var name = 'antoku';
+  - var name_j = '安徳 知博';
+
+  //- - var prev_name = 'araki';
+  //- - var prev_alt = '荒木 桃子';
+  - var prev_name = 'karikawa';
+  - var prev_alt = '刈川 直紀';
+
+  - var next_name = 'terabayashi';
+  - var next_alt = '寺林 真綸';
+  - var lead_txt = 'クライアント向けにWebサイトやスマートフォンアプリなどのシステム開発・提供を行うICTソリューションセンターで、ECサイトの開発やテストを担当する安徳。未経験のシステム開発業務に挑む彼に、何をどう学び、働いているのかを聞いた。';
+  - var copy = '開発未経験からシステムエンジニアを目指すプログラマー';
+  - var joined_year = '2015年入社';
+  - var department = '情報コミュニケーション事業本部 ＩＣＴソリューションセンター / 技術';
+
+block content
+  // contents
+  div(class='member-detail-kv ' + name)
+    .member-kv-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../member/index.html') 社員紹介
+            | &gt;
+          li
+            a(href='#') #{name_j}さん
+      .member-detail-txt-wrapper
+        .member-detail-txt-wrapper-member.wow.fadeInUp(data-wow-delay='0.4s')
+          h1 MEMBER
+        .member-detail-txt-wrapper-copy.wow.fadeInUp(data-wow-delay='0.7s')
+          p #{copy}
+        .member-detail-txt-wrapper-profile.wow.fadeInUp(data-wow-delay='1.0s')
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+      .member-detail-txt-wrapper-onply-sp.wow.fadeInUp(data-wow-delay='0.4s')
+        p.member-detail-p-onply-sp #{copy}
+
+  .member-lead-contents.wow.fadeInUp(data-wow-delay='1.3s')
+    .member-lead-contents-inner
+      p.member-lead-contents-p #{lead_txt}
+
+  .member-detail-contents-width
+    .appear.member-onply-sp
+      .member-detail-txt-wrapper-only-sp.fiu.animated
+        .member-detail-txt-wrapper-profile
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+        .member-lead-contents-only-sp.fiu.animated
+          .member-lead-contents-inner-only-sp
+            p.member-lead-contents-p-only-sp #{lead_txt}
+
+    .member-contents-1-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents1.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents1.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 システムの全体像を見通す目を持ちたい
+            p 学生時代、画像処理に関する研究をしていてプログラミング経験はあったのですが、ECサイトのようなユーザーが使用するシステムを開発した経験はありませんでした。当たり前ですが、分からないことだらけの状態からスタートしました。
+            p システム開発には要件定義・設計・プログラミング・テストなどの工程があり、私は主にプログラミング・テストを担当しています。また、ゼロからのシステム開発ではなく、既存のシステムを部分的に改修する案件が多く、人の書いたプログラムを読みながらシステムを理解していけるので未経験者が勉強するには良い業務だと思います。同じ部署には2つ年次が上の先輩がいて、分からないことを尋ねたらいつも即答してくれます。それがすごく頼もしくて、自分もあんな風になりたいと思っています。
+            p システム改修で苦労するのが、影響範囲の見極めです。人の体って、どこかを痛めたら別の場所まで悪くなってしまうことがありますよね。システムも同じで、どこかを変更したら、一見関係ない別の場所まで変わってしまうことがよくあります。分断された機能を継ぎはぎしているわけではなく、すべての機能が１つにつながっているので、全体像を理解することが大事です。でも、分かっていてもすぐには身に付くものではありません。
+            p ECサイトの場合、商品登録や在庫管理のようなお店側向けの機能と、カートや決済のような消費者向けの機能の両方が内包されていて、機能の数や種類が膨大なので全体像も複雑です。入社2年が経とうとしていますが、まだまだ勉強している最中ですね。
+
+    .member-contents-2-wrapper
+      .member-detail-contents-inner
+        .member-contents-left.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents2.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents2.png', alt='aaa' class="member-only-sp")
+        .member-contents-right.wow.fadeInRight(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 “システムエンジニアリング”×“身近”を追求していく
+            p 当面の目標として意識しているのが、要件定義工程を任せてもらえるようになることです。システム開発を行うとき、いきなりプログラムを書き始めるわけではもちろんなくて、どんなシステムをつくるのかを決める要件定義という工程が必ず先にあります。システムの全体像を描く仕事なので、クライアントの要望を聞き取るヒアリング力や、ユーザーの使い勝手を思い浮かべる想像力、開発の効率を考えるプログラミングの知識、ほかにもいろんな能力が必要な業務です。難しい分、面白みも大きい、システムエンジニア（SE）の醍醐味ですね。
+            p 現時点では、上司や先輩が調整した要件に従ってプログラムを書くことが多いですが、システムに関わるからには、いずれは自分で要件定義を任せてもらえるようになりたいと思っています。
+            p もうひとつ思っていることは、身近なものに関わりたいということです。SEというと、金融システムだったり、企業内の基幹システムだったり、クライアント内部の人だけが使う閉じた世界のものをつくるイメージが強いかと思います。私自身も、実際にそういうものをつくっている会社の選考も受けました。でも、自分がつくるなら、一部の会社の人だけではなくて、世の中でオープンに使われるようなものに関わりたいと思うようになりました。トッパンの場合は普通の人の生活に関わりがあるところでの仕事が多いのが特徴です。日常生活のなかで、「コレを自分がつくったんだ」と実感できるようなものに関わっていきたいですね。
+
+    .member-contents-3-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents3.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents3.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 バックグラウンドに引っ張られず、やりたいことを探す
+            p 私の場合、システム開発の経験はなかったものの、プログラミング経験はありました。でも、ICTソリューションセンターには文系学部出身・プログラミング未経験だった人もいます。最初の苦労はもしかしたら私以上にあったのかもしれませんが、経験を重ねるなかでスキルは身に付きますし、お客さんとコミュニケーションをとることが上手な人も多く、いろんなバックグラウンドの人がそれぞれの得意分野で力を発揮しています。それを見ていると、文系だから理系だからということはあまり意識しないほうがいいのではないかと思います。
+            p だから就活は、まっさらの状態で自分がやりたいことを考え直すといいかもしれません。やりたいことというのは、私が身近なものに関わりたいと考えたように、具体的でなくても構いません。
+            p あとは、ネットやクチコミで分かることには限りがあるので、説明会などで実際に働いている人に会ってみるのがいいと思います。トッパンは特にそれが当てはまり、社名に「印刷」と入っているからか、それに引っ張られて、会社のことをあまり知らないうちに自分に関係のない会社だと思われがちです。出身大学の研究室に行って後輩と話した際もやはりそうでしたが、実際にやっていることを話すと興味を持ってくれるようになりました。知れば興味を持ってくれるのに、知らずに対象外だと思うのはもったいないので、視野を広く持っていろんな会社を見てほしいですね。
+
+  .privare_photo
+    p PRIVATE PHOTO
+  .member-detail-contents-width
+    .privare_photo_wrapper
+      .privare_photo_wrapper-left
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-left.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 研究に尽力しながらもテニスを中心とした学生時代でした。部活で毎日テニス、引退後も暇さえあればテニス、友人とのTVゲームもテニスでした。大学まで九州で過ごしたので、仲の良い友人は九州在住が多く、現在は離れていますが、連絡をとる機会や会う機会は今でも多いです。
+      .privare_photo_wrapper-right
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-right.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 休日は、学生時代から続けているテニスをすることが多く、会社のメンバーと共に大会にも出場しています。社会人になって体を動かす機会は減りましたが、テニスがあれば大丈夫です。これからもテニスは一生続けていきたいと思っています。
+  .member-transition-link-wrapper
+    .member-transition-link
+      a.member-transition-link-prev-a(href='./'+ prev_name +'.html')
+        .member-transition-link-prev
+          img(src='../assets/img/member/'+ prev_name +'/member-transition-link-'+ prev_name +'.png', alt=prev_alt)
+          //- p.member-transition-link-status 事業開発・研究本部
+          //-   br
+          //-   | 総合研究所 基盤技術研究所 / 技術
+          p.member-transition-link-status 情報コミュニケーション事業本部
+            br
+            | トッパンアイデアセンター クリエイティブ本部 / 企画
+          p.member-transition-link-name #{prev_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-pc
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+      a.member-transition-link-next-a(href='./'+ next_name +'.html')
+        .member-transition-link-next
+          img(src='../assets/img/member/'+ next_name +'/member-transition-link-'+ next_name +'.png', alt=next_alt)
+          p.member-transition-link-status 情報コミュニケーション事業本部
+            br
+            | 第十営業本部 / 営業
+          p.member-transition-link-name #{next_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-sp
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+
+  // /contents

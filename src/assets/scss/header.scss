@@ -1,0 +1,311 @@
+.header {
+  background-color: #041036;
+  width: 100%;
+  height: 80px;
+  padding: 0 280px 0 270px;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .logo {
+    float: left;
+    width: 270px;
+    position: absolute;
+    left: 20px;
+  }
+
+  .nav-pc {
+    width: 100%;
+
+    .nav-contents-link {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      text-align: center;
+
+      .txt-link {
+        padding: 31px 0;
+        display: block;
+        line-height: 1.3;
+      }
+
+      li {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .nav-external-link {
+      position: absolute;
+      right: 20px;
+      top: 16px;
+
+      .header-btn {
+        margin-top: 10px;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+
+      li {
+        margin-right: 25px;
+        float: left;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+  .hide-navi {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .header {
+
+    .logo {
+      left: 5px;
+    }
+
+    .nav-pc {
+
+      .nav-external-link {
+        right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    position: fixed;
+    //PCと合わせてる z-index
+    z-index:9999;
+    height: 50px;
+    padding: 0;
+
+    .nav-pc {
+      display: none;
+    }
+
+    .logo {
+      float: left;
+      width: 170px;
+      position: absolute;
+      left: -5px;
+    }
+  }
+  .navOpen {
+    .nav-pc {
+      margin-top: 50px;
+    }
+  }
+  /* ナビゲーションアイコン */
+  .navBtn {
+     display: block;
+     width: 30px;
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     cursor: pointer;
+
+     span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 2px;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          margin-top: 5px;
+        }
+    }
+  }
+  .navOpen .navBtn {
+    span:nth-of-type(1) {
+      -webkit-transform: translateY(9px) translateX(0) rotate(45deg);
+      -ms-transform: translateY(9px) translateX(0) rotate(45deg);
+      transform: translateY(9px) translateX(0) rotate(45deg);
+    }
+    span:nth-of-type(2) {
+      margin-top: 5px;
+      opacity: 0;
+      -webkit-transform: translateY(9px);
+      -ms-transform: translateY(9px);
+      transform: translateY(9px);
+    }
+    span:nth-of-type(3) {
+      -webkit-transform: translateY(-9px) translateX(0) rotate(-45deg);
+      -ms-transform: translateY(-9px) translateX(0) rotate(-45deg);
+      transform: translateY(-9px) translateX(0) rotate(-45deg);
+    }
+  }
+}
+
+// コンテンツを固定/解除（Jsで制御）
+.fixed {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+/* オーバーレイ */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #041036;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)";
+    z-index: 9999;
+}
+
+/* ナビゲーション */
+.hide-navi {
+    // display: block;
+    //
+    overflow:auto;
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    width:  100%;
+    height: 100%;
+    background: #041036;
+    opacity: 0;
+    z-index: 9999;
+    text-align: left;
+
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+    padding: 15px;
+}
+
+.navOpen .hide-navi {
+    opacity: 1;
+    right: 0;
+}
+
+/* アコーディオン */
+.acMenu {
+  .navi-title {
+    cursor:pointer;
+    text-decoration: none;
+    line-height: 2.5;
+
+    span {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        right: 15px;
+        width: 16px;
+        height: 16px;
+        margin-top: -5px;
+        background-image: url(../img/sp-menu-plus.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .navi-link {
+    display:none;
+    .navi-link-one-column {
+      width: 100%;
+    }
+    li {
+      width: 50%;
+      float: left;
+    }
+    a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 100;
+    }
+  }
+  .navi-border-btm {
+    margin: 0 5px;
+    display: block;
+    border-bottom: 1px solid rgba(#ffffff, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.acMenu {
+  .add_plus {
+    span {
+
+      &::after {
+        top: 21px;
+        background-image: url(../img/sp-menu-minus.png);
+      }
+    }
+  }
+}
+
+.sp-notacMenu {
+  .navi-title {
+    cursor:pointer;
+    text-decoration: none;
+    line-height: 2.5;
+  }
+  .navi-title-external-link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      right: 11px;
+      width: 12px;
+      height: 13px;
+      margin-top: -5px;
+      background-image: url(../img/gnav_close.png);
+      background-repeat: no-repeat;
+      background-size: 12px;
+    }
+  }
+  li {
+    width: 50%;
+    float: left;
+  }
+  a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 100;
+
+    img {
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+  }
+  .navi-border-btm {
+    margin: 0 5px;
+    display: block;
+    border-bottom: 1px solid rgba(#ffffff, 0.2);
+    font-size: 13px;
+    font-weight: 100;
+  }
+}
+
+.hide-navi-logo {
+  text-align: center;
+  padding-top: 50px;
+  img {
+    width: 50%;
+  }
+}

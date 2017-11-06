@@ -1,0 +1,62 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "最新情報｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "最新情報のご紹介。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "採用情報,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "news.html";
+  //- visionalist
+  - var visionalist_prm= "rc100126";
+
+block meta
+  include _includes/_meta_n
+
+block header
+  include _includes/_header_top
+
+block content
+  // contents
+  .recruit-n-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='#') 最新情報
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 NEWS
+        .key_visual-inner-txt-wrapper-sub
+          p 最新情報
+        .key_visual-inner-txt-wrapper-txt
+          p 最新の情報をお届けします。
+
+  .contents-width
+    .appears
+      .recruit-n-contents-wrapper.wow.fadeInUp(data-wow-delay='0.5s')
+        .recruit-n-contents-inner
+          dl.acMenu
+            dt 2017.03.01
+              p 2018年度採用サイトをオープンしました
+            dd 2018年度採用サイトをオープンしました。ぜひご覧ください。
+
+  //- a#news_btn(href='../') もっと見る
+
+  // /contents
+
+block scroll
+  include _includes/_scrollup_top
+
+block footer
+  include _includes/_footer_top
+
+block script
+  include _includes/_script_n

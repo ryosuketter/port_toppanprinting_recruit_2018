@@ -1,0 +1,142 @@
+//-------base
+
+html {
+	font-size: 100%;
+	color: #070002;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+	font-family: $font_base;
+	font-size: 14px;
+	line-height: 1.6;
+	@media only screen and (max-width: $point_sp) {
+		font-size: 11px;
+	}
+}
+
+input,
+select,
+button  {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0;
+	border-radius: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: middle;
+}
+select  {
+	background-color: transparent;
+	text-indent: .01px;
+	text-overflow: "";
+}
+textarea  {
+	font-size: 100%;
+}
+
+em  {
+	font-style: normal;
+}
+
+strong  {
+	font-weight: bold;
+}
+
+img  {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+	&[src*="_sp."] {
+		display: none;
+	}
+	@media only screen and (max-width: $point_sp) {
+		&[src*="_pc."] {
+			display: none;
+		}
+		&[src*="_sp."] {
+			display: inline;
+		}
+	}
+}
+
+//-------wrap
+#wrap_top {
+	min-width: $base_width;
+	background: #fff;
+	overflow: hidden;
+	@media only screen and (max-width: $point_sp) {
+		min-width: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+//-------link
+a {
+	color: $link_color;
+	text-decoration: underline;
+	@include tsn;
+	&:hover {
+		color: $link_color_hover;
+		text-decoration: none;
+	}
+}
+
+//-------main
+main {
+}
+section{
+	.inner{
+		padding: 60px 0 30px 0;
+		margin: 0 auto;
+		width: $base_width;
+		@media only screen and (max-width: $point_sp) {
+			width: 100%;
+			padding: 29px 0 24px 0;
+		}
+	}
+}
+
+//-------pagetop
+#pagetop {
+	display: none;
+	position: fixed;
+	width: 150px;
+	padding: 15px;
+	border: 1px solid #000;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	right: 50px;
+	bottom: 50px;
+	@include tsn;
+	&:hover {
+		color: #c00;
+	}
+}
+
+//-------footer
+footer {
+	background-color: #006dc3;
+	color: #fff;
+	padding:40px 0px;
+	position: relative;
+	z-index: 100;
+	@media only screen and (max-width: $point_sp) {
+		border-top:none;
+	}
+	.inner{
+		margin: 0 auto;
+		@media only screen and (max-width: $point_sp) {
+			width: 100%;
+		}
+	}
+	a:hover{
+		color: #fff;
+		text-decoration: underline;
+	}
+}

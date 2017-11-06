@@ -1,0 +1,217 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "募集要項｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "募集要項のご紹介。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "採用情報,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "recruit/info.html";
+  //- visionalist
+  - var visionalist_prm= "rc100124";
+
+block content
+  // contents
+  .recruit-i-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../recruit/index.html') 採用情報
+            | &gt;
+          li
+            a(href='#') 募集要項
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 RECRUITMENT
+        .key_visual-inner-txt-wrapper-sub
+          p 募集要項
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンでは「営業・事務系」「企画系」「技術系」と大きく分けて３つの職種ごとに採用を行っています。
+
+  .contents-width
+    .appear
+      .recruit-i-contents-wrapper.fiu.animated
+        .recruit-i-contents-inner
+          .recruit-i-contents-hd-txt
+            p 営業・事務系
+          table
+            tbody
+              tr
+                th 概要
+                td 営業部門または事務管理部門への配属
+                  br.contents-height
+                  | ■営業部門
+                  br
+                  | トッパンの営業は「企画提案型」。自社製品を売り込むような一般的なメーカーの営業とは異なり、クライアントが抱える課題を分析してニーズをつかみ、様々な部門と協力しながら総合的なソリューションを提案します。
+                  br.contents-height
+                  | ■事務管理部門（事業戦略、総務、法務、財務など）
+                  br
+                  | 企業活動がスムーズに行われるように、専門知識や能力を生かして他部門のサポートをするほか、経営判断に必要な情報提供や施策提案を行います。
+                  br
+                  | ※法務、財務については「専門コース」として、職種別採用を行います。
+              tr
+                th 応募資格
+                td ・2018年3月末までに四年制大学または大学院を卒業・修了予定の方
+                  br
+                  | ・既に卒業・修了された方で新規卒業予定者と同等の枠組での採用を希望される方（経歴の有無は問いません）
+              tr
+                th 対象学部
+                  br
+                  | 学科等
+                td 全学部・全学科(文理不問）
+    .appear
+      .recruit-i-contents-wrapper.fiu.animated
+        .recruit-i-contents-inner.recruit-i-contents-inner-mid
+          .recruit-i-contents-hd-txt
+            p 企画系
+          table
+            tbody
+              tr
+                th 概要
+                td 企画部門への配属
+                  br
+                  | クライアントの課題を受けて、ＩＴ・マーケティング・クリエイティブなどの専門知識やノウハウを生かしながら、具体的な商品・サービスの企画立案を行います。
+                  br
+                  | ※下記コース別に採用を行います。
+                  br.contents-height
+                  | ①ビジネスコース
+                  br
+                  | 　IT・マーケティング系部門への配属
+                  br.contents-height
+                  | ②アートコース（※作品審査あり）
+                  br
+                  | 　クリエイティブ系部門への配属
+              tr
+                th 応募資格
+                td ・2018年3月末までに四年制大学または大学院を卒業・修了予定の方
+                  br
+                  | ・既に卒業・修了された方で新規卒業予定者と同等の枠組での採用を希望される方（経歴の有無は問いません）
+              tr
+                th 対象学部
+                  br
+                  | 学科等
+                td 全学部・全学科（文理不問）
+                  br
+                  | 特に、IT系、マーケティング系、美術・デザイン系の学部・学科
+    .appear
+      .recruit-i-contents-wrapper.fiu.animated
+        .recruit-i-contents-inner.recruit-i-contents-inner-mid
+          .recruit-i-contents-hd-txt
+            p 技術系
+          table
+            tbody
+              tr
+                th 概要
+                td 技術部門への配属
+                  br
+                  | （研究開発、商品開発、生産技術、システム開発ほか）
+                  br.contents-height
+                  | 幅広い技術領域を生かし、「印刷」にとどまらない多種多様な「ものつくり」「ことつくり」を支えます。基盤技術の研究、新商品・システムの開発、生産工程におけるコストダウン・プロセスの構築・品質保証の推進など、様々な技術力の掛け合わせと協力によって仕事を進めていきます。
+                  br.contents-height
+                  | 材料系、機械・電気系、情報系など、あらゆる専攻分野がその専門性を発揮できるフィールドがあります。
+                  br
+                  | ⇒具体的な内容は #[a.test(href="info-matrix.pdf" target="_blank") こちら]をご参照ください。
+              tr
+                th 応募資格
+                td ・2018年3月末までに四年制大学または大学院を卒業・修了予定の方
+                  br
+                  | ・既に卒業・修了された方で新規卒業予定者と同等の枠組での採用を希望される方（経歴の有無は問いません）
+              tr
+                th 対象学部
+                  br
+                  | 学科等
+                td 理系（専攻分野不問）
+                  br
+                  | 機械、電気・電子・通信、化学・材料、バイオ、情報・画像、物理・数理、環境　ほか
+    .appear
+      .recruit-i-contents-wrapper.fiu.animated
+        .recruit-i-contents-inner.recruit-i-contents-inner-mid
+          .recruit-i-contents-hd-txt
+            p その他の情報
+          table
+            tbody
+              tr
+                th 採用数
+                td 2018年度　営業・事務系：未定　 企画系：未定　技術系：未定
+                  br
+                  | 2017年度　営業・事務系：140名　企画系：20名　技術系：140名
+                  br
+                  | 2016年度　営業・事務系：130名　企画系：20名　技術系：140名
+              tr
+                th 選考方法
+                td ＜営業・事務系＞適性検査、グループディスカッション、面接
+                  br
+                  | ＜企画系＞適性検査、作品審査（アートコース）、面接
+                  br
+                  | ＜技術系＞適性検査、面接
+                  br
+                  | ※選考地区により一部異なります。詳細は会員ページにてご案内します。
+              tr
+                th 選考地区
+                td 東京、札幌、仙台、名古屋、大阪、福岡
+              tr
+                th 給与
+                td 2016年4月初任給実績
+                  br
+                  | ＜学士卒＞　月給21万4500円
+                  br
+                  | ＜修士了＞　月給23万2000円
+                  br
+                  | ※東京勤務の場合
+                  br
+                  | ※都市手当10,500円含む
+              tr
+                th 諸手当
+                td 都市手当、家族手当、超過勤務手当、研究員手当、役付手当　他
+              tr
+                th 賃金改定
+                td 年1回（4月）
+              tr
+                th 賞与
+                td 年2回（6月、12月）
+              tr
+                th 勤務地
+                td 東京、大阪、他全国各事業所
+              tr
+                th 勤務時間
+                td 標準勤務時間9:00～18:00
+              tr
+                th 休日休暇
+                td 完全週休2日制(土・日)、国民の祝日・休日、創立記念日（6月4日）、夏季休暇、年末年始休暇ほか（年間休日125日）
+              tr
+                th 年次有給休暇
+                td 初年度10日、勤続1年以上12日、2年以上14日、3年以上16日、4年以上18日、5年以上20日（半日休暇制度あり）
+              tr
+                th 福利厚生
+                td 財形貯蓄制度、財形融資制度、育児休業制度、介護休業・介護勤務短縮制度、社会保険（健康保険、厚生年金保険、労災保険、雇用保険、ほかに労災付加給付制度）、持株制度（補助金制度による従業員持株制度）、厚生施設（独身寮、保養所、診療所）など
+              tr
+                th 教育制度
+                td ファーストキャリアプラン（入社前から入社3年目までの体系的育成制度）、トッパンビジネススクール（自己啓発のため選択研修）、海外トレーニー制度、選抜型研修、部門別個別研修など
+
+  .appear
+    .recruit-i-contents-wrapper.fiu.animated
+      .recruit-i-contents-inner.recruit-i-contents-inner-mid
+        .recruit-i-contents-hd-txt
+          a#recruit_entry_btn(href='https://job.axol.jp/hk/s/toppan_18/entry/', onclick="return (VL_FileDL(this))" vlpageid=entry_prm) エントリーはこちら
+
+  .business-transition-link-wrapper
+    .business-transition-link
+      .blank
+      a.business-transition-link-top-a(href='../recruit/index.html')
+        .business-transition-link-top
+          i.fi-thumbnails
+          p 採用情報の
+            br
+            | トップに戻る
+      .blank
+
+
+  // /contents

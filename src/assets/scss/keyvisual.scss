@@ -1,0 +1,305 @@
+// key_visual
+[class$="-key_visual"],[class*="-key_visual "] {
+  background-size: cover;
+  margin-bottom: -80px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  // key_visual
+  [class$="-key_visual"],[class*="-key_visual "] {
+    margin-top: -6px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  [class$="-key_visual"],[class*="-key_visual "]  {
+    padding: 60px 0 65px;
+  }
+}
+
+// 事業紹介
+.business-key_visual {
+  background-image: url(../img/business/business-bg.png);
+  z-index: -1;
+}
+// 事業紹介 - 事業分野
+.business-c-key_visual {
+  background-image: url(../img/business/business-c-bg.png);
+}
+// 事業紹介 - トッパンの製品（もの・こと）
+.business-p-key_visual {
+  background-image: url(../img/business/business-p-bg.png);
+}
+// 事業紹介 - トッパンの研究
+.business-r-key_visual {
+  background-image: url(../img/business/business-r-bg.png);
+}
+// 社員紹介
+.member-key_visual {
+  background-image: url(../img/member/member-bg.png);
+}
+// ストーリー
+.story-key_visual {
+  background-image: url(../img/story/story-bg.png);
+}
+// ストーリー - ストーリー1（対談）
+.story-01-key_visual {
+  background-image: url(../img/story/story-01-bg.png);
+}
+// ストーリー - ストーリー2（対談）
+.story-02-key_visual {
+  background-image: url(../img/story/story-02-bg.png);
+}
+// 企業情報
+.company-key_visual {
+  background-image: url(../img/company/company-bg.png);
+}
+// 企業情報 - 歩み
+.company-h-key_visual {
+  background-image: url(../img/company/company-h-bg.png);
+}
+// 企業情報 - データ
+.company-d-key_visual {
+  background-image: url(../img/company/company-d-bg.png);
+}
+// 企業情報 - 概要
+.company-a-key_visual {
+  background-image: url(../img/company/company-a-bg.png);
+}
+// 採用情報
+.recruit-key_visual {
+  background-image: url(../img/recruit/recruit-bg.png);
+}
+// 採用情報 - メッセージ
+.recruit-m-key_visual {
+  background-image: url(../img/recruit/recruit-m-bg.png);
+  margin-bottom: 0px;
+  min-height: 300px;
+  max-height: 655px;
+  padding-bottom: 16.5%;
+  margin-top: 80px;
+}
+@media screen and (max-width: 1000px)  {
+  .recruit-m-key_visual {
+    margin-top: 50px;
+  }
+}
+
+// 採用情報 - 要項
+.recruit-i-key_visual {
+  background-image: url(../img/recruit/recruit-i-bg.png);
+}
+// 採用情報 - FAQ
+.recruit-f-key_visual {
+  background-image: url(../img/recruit/recruit-f-bg.png);
+}
+// 採用情報 - 最新情報
+.recruit-n-key_visual {
+  background-image: url(../img/recruit/recruit-n-bg.png);
+  z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+  // key_visual
+  [class*="key_visual"] {
+    background-position: left top -10px;
+    background-size: cover;
+  }
+
+  // 事業紹介
+  .business-key_visual {
+    background-image: url(../img/business/sp-business-bg.png);
+    z-index: -1;
+  }
+  // 事業紹介 - 事業分野
+  .business-c-key_visual {
+    background-image: url(../img/business/sp-business-c-bg.png);
+  }
+  // 事業紹介
+  .business-key_visual {
+    background-image: url(../img/business/sp-business-bg.png);
+    z-index: -1;
+  }
+  // 事業紹介 - 事業分野
+  .business-c-key_visual {
+    background-image: url(../img/business/sp-business-c-bg.png);
+  }
+  // 事業紹介 - トッパンの製品（もの・こと）
+  .business-p-key_visual {
+    background-image: url(../img/business/sp-business-p-bg.png);
+    z-index: -1;
+  }
+  // 事業紹介 - トッパンの研究
+  .business-r-key_visual {
+    background-image: url(../img/business/sp-business-r-bg.png);
+  }
+  // 社員紹介
+  .story-key_visual {
+    background-image: url(../img/member/sp-member-bg.png);
+  }
+  // 社員紹介 - ストーリー1（対談）
+  .story-1-key_visual {
+    background-image: url(../img/member/sp-member-1-bg.png);
+  }
+  // ストーリー
+  .story-key_visual {
+    background-image: url(../img/story/sp-story-bg.png);
+  }
+  // ストーリー - ストーリー1（対談）
+  .story-1-key_visual {
+    background-image: url(../img/story/sp-story-1-bg.png);
+  }
+  // ストーリー - ストーリー2（対談）
+  .story-2-key_visual {
+    background-image: url(../img/story/sp-story-2-bg.png);
+  }
+
+  // 企業情報
+  .company-key_visual {
+    background-image: url(../img/company/sp-company-bg.png);
+  }
+  // 企業情報 - 歩み
+  .company-h-key_visual {
+    background-image: url(../img/company/sp-company-h-bg.png);
+  }
+  // 企業情報 - データ
+  .company-d-key_visual {
+    background-image: url(../img/company/sp-company-d-bg.png);
+  }
+  // 企業情報 - 概要
+  .company-a-key_visual {
+    background-image: url(../img/company/sp-company-a-bg.png);
+  }
+  // 採用情報
+  .recruit-key_visual {
+    background-image: url(../img/recruit/sp-recruit-bg.png);
+  }
+  // 採用情報 - メッセージ
+  .recruit-m-key_visual {
+    background-image: url(../img/recruit/sp-recruit-m-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 283px;
+  }
+  // 採用情報 - 要項
+  .recruit-i-key_visual {
+    background-image: url(../img/recruit/sp-recruit-i-bg.png);
+    margin-bottom: 7px;
+  }
+  // 採用情報 - FAQ
+  .recruit-f-key_visual {
+    background-image: url(../img/recruit/sp-recruit-f-bg.png);
+    margin-bottom: -35px;
+  }
+  // 採用情報 - 最新情報
+  .recruit-n-key_visual {
+    background-image: url(../img/recruit/sp-recruit-n-bg.png);
+    background-position: left top -40px;
+  }
+}
+
+.key_visual-inner {
+  padding: 207px 0 207px;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner {
+    padding: 50px 0 37px;
+    position: relative;
+  }
+}
+
+// bread_crumb
+.key_visual-inner-bread_crumb {
+  font-size: 12px;
+  z-index: 100;
+  position: absolute;
+  top: 25px;
+  left: 8%;
+  text-shadow: 0px 0px 12px #333;
+
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  a {
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .key_visual-inner-bread_crumb {
+    display: none;
+  }
+}
+
+.key_visual-inner-txt-wrapper {
+  text-align: center;
+  padding: 0 29%;
+}
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper {
+    text-align: center;
+    padding: 0 10%;
+  }
+}
+
+.key_visual-inner-txt-wrapper-hd {
+    font-size: 40px;
+    letter-spacing: 1.8;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper-hd {
+      font-size: 30px;
+      letter-spacing: 1.8;
+      margin-bottom: 4px;
+  }
+}
+
+.key_visual-inner-txt-wrapper-sub {
+  margin-bottom: 66px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:25px auto 0;
+    width: 42px;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper-sub {
+    margin-bottom: 24px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin:8px auto 0;
+      width: 42px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+.key_visual-inner-txt-wrapper-txt {
+  line-height: 2.2;
+}
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper-txt {
+    font-size: 12px;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,145 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "西垣操｜社員紹介｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "社員紹介⑦西垣操へのインタビュー。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "社員紹介,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "member/nishigaki.html";
+
+  //- visionalist
+  - var visionalist_prm= "rc100112";
+
+  //-menber
+  - var name = 'nishigaki';
+  - var name_j = '西垣 操';
+  - var prev_name = 'ishiguro';
+  - var prev_alt = '石黒 庸平';
+  - var next_name = 'karikawa';
+  - var next_alt = '刈川 直紀';
+  - var lead_txt = '食品や日用品のパッケージ開発が主であった生活・産業事業の可能性を広げるため、異業界クライアント向けの商品開発をミッションとして発足したビジネスイノベーションセンター開発本部。包材開発チームで研究開発に取り組む西垣が感じた、新領域を切り拓いていくことの醍醐味とは？';
+  - var copy = '社内ノウハウを活かし、新分野を開拓する包材開発';
+  - var joined_year = '2012年入社';
+  - var department = '生活・産業事業本部 ビジネスイノベーションセンター 開発本部 / 技術';
+
+block content
+  // contents
+  div(class='member-detail-kv ' + name)
+    .member-kv-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../member/index.html') 社員紹介
+            | &gt;
+          li
+            a(href='#') #{name_j}さん
+      .member-detail-txt-wrapper
+        .member-detail-txt-wrapper-member.wow.fadeInUp(data-wow-delay='0.4s')
+          h1 MEMBER
+        .member-detail-txt-wrapper-copy.wow.fadeInUp(data-wow-delay='0.7s')
+          p #{copy}
+        .member-detail-txt-wrapper-profile.wow.fadeInUp(data-wow-delay='1.0s')
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+      .member-detail-txt-wrapper-onply-sp.wow.fadeInUp(data-wow-delay='0.4s')
+        p.member-detail-p-onply-sp #{copy}
+
+  .member-lead-contents.wow.fadeInUp(data-wow-delay='1.3s')
+    .member-lead-contents-inner
+      p.member-lead-contents-p #{lead_txt}
+
+  .member-detail-contents-width
+    .appear.member-onply-sp
+      .member-detail-txt-wrapper-only-sp.fiu.animated
+        .member-detail-txt-wrapper-profile
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+        .member-lead-contents-only-sp.fiu.animated
+          .member-lead-contents-inner-only-sp
+            p.member-lead-contents-p-only-sp #{lead_txt}
+
+    .member-contents-1-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents1.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents1.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 開発力で、付き合いのなかった業界を開拓する
+            p トッパンの生活・産業事業分野は、様々な業界のクライアントに、パッケージや個装などの包材や、建材や機能性素材など特殊用途資材を提供してきました。ビジネスイノベーションセンター（BIC）は、そのなかでも今まで取引のなかった業界のクライアントを開拓するために組織された部署です。
+            p トッパンは、古くから様々なメーカーの様々な製品のパッケージをつくってきました。紙箱はもちろん、レフィルム製のパウチ、プラスチック製のボトル、そのほか様々な素材を用途合わせた形状やデザインに加工してきました。また、建物の内外装に用いる建装材や、電子機器用の資材などもつくっていますから、素材に関するノウハウは、外から見る以上に持っている会社です。そんなノウハウを活かし、さらにビジネスを広げていく足がかりをつくるのがBICの役割だと思っています。
+            p 私自身が今担当しているのも、とある通販メーカー向けの包材開発です。通販で何かを購入した際、商品がむき出しで届くことはありませんよね。段ボールだったり、封筒だったりに梱包されて届くはずです。クライアントは、その梱包材について悩みを抱えていました。営業がヒアリングしてきたのは２つ。
+            p １つは、手作業で梱包しているけれど、受注が伸びて追い付かなくっているため自動化したいこと。もう1つは、内容量をできるだけ大きくすることで、1回の配送で多くの品を届けられるようにしたいということ。これは、送料負担を減らすという顧客配慮と、梱包材のカサを減らす環境配慮と、両方を兼ねていました。
+
+    .member-contents-2-wrapper
+      .member-detail-contents-inner
+        .member-contents-left.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents2.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents2.png', alt='aaa' class="member-only-sp")
+        .member-contents-right.wow.fadeInRight(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 幅広いノウハウを活かし、顧客の悩みを解決する
+            p この悩み解決に向けて、私が行ったのは、新規格の緩衝材付き封筒の開発です。比較的小物を買った際、郵便受けに入るサイズの封筒で届くことがあると思います。中身を傷つけないように、内側が気泡緩衝材で覆われているのですが、緩衝材が厚いほど、内容量は減ってしまいます。
+            p そこで、新規格の封筒には「グッドクッションフィルム（GCフィルム）」という、緩衝材付きフィルムを用いました。これによって、気泡緩衝材を用いた従来品に比べて、耐衝撃性を保ちつつ、厚みは約半分にできました。その分、商品を入れられるスペースが増えます。また、この封筒と合わせて梱包作業を自動で行う装置も同時に開発し、手作業に比べて約3倍の生産性を実編しました。加えて、表面への印刷も中身が透けない特殊インクと高精細な印刷によって見た目の美しさも高めています。
+            p この案件では、品質基準を定めるところから、自動包装機の監修まですべてに関わりました。包材の改良はクライアントにとっても初めてのことだったので、どんな品質のものが必要かという基準自体が定められていません。耐衝撃性を担保するうえで、どんなテストをして、どんな数値を比べるかという評価基準づくりから担当しました。基準をクリアできる仕様ができたら、今度は梱包作業を自動化するための装置の開発が始まります。機械メーカーさんとの直接のやりとりは社内のシステム部隊が行いますが、私も要望をまとめたり、逆に機械化しやすいように仕様を調整したり、協力しながら業務を進めました。
+
+    .member-contents-3-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents3.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents3.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 視野を広げた偶然のめぐり合わせ
+            p GCフィルムを用いた封筒は、着手から完成までに3年の月日を費やしました。長期のプロジェクトで苦労も多くあったのですが、無事製品化でき嬉しいです。一部新聞に取り上げていただけたことも励みになりました。
+            p 学生時代、物質化学科で材料系の研究をしていたので、同学科の友人はフィルムメーカーや樹脂メーカーなどの材料メーカーに就職する人が多かったのですが、私自身は人の生活に近いものがつくりたかったんです。最初はトッパンのことを知らず、化粧品や医薬品の業界を志望していて、印刷業界自体まったく意識になかったのですが、合同説明会で同業他社のブースに行ったことや、研究室にトッパンから案内が来ていたことで存在を意識しました。材料系の知識を活かしつつ、パッケージという形で様々な業界の最終製品に携われることに魅力を感じました。
+            p 自身の経験から、持っている知識だけで志望範囲を狭めてしまうのはもったいないと思っています。特に理系は研究分野に近い領域の業種ばかりを見てしまいがちですが、少し視野を広げるとおもしろい会社はたくさんあります。実際、研究室の後輩たちと話していても、最初は印刷業界に全く興味がない様子でも、事業の幅広さやつくっているモノについて説明すると、興味を持ってくれる人が多いものです。どんな会社が自分に合っているかはなかなか分からないものだと思うので、合同説明会など、いろんな会社にランダムに会える場所に行ってみるといいかもしれません。素敵なめぐり合わせに出会えることを祈っています。
+
+  .privare_photo
+    p PRIVATE PHOTO
+  .member-detail-contents-width
+    .privare_photo_wrapper
+      .privare_photo_wrapper-left
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-left.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 休日は、学生時代にはできなかったことをやってみたり、行ったことない場所に旅行に行って楽しんでいます。いろいろ経験することで刺激を受けます。他にも会社の同期とテーマパークに行ったり、冬になると滑りに行ったり。学生時代のように騒げる素敵な同期に巡りあえました！
+      .privare_photo_wrapper-right
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-right.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 学生時代はオープンキャンパスを運営する団体に所属し、その活動に熱中していました！高校生向けにイベントを開催して、感謝されたときはめっちゃ嬉しかったし、やりがいを感じていました。サークルメンバーとは国内・海外問わずいろいろ旅行に行って楽しかったです。
+  .member-transition-link-wrapper
+    .member-transition-link
+      a.member-transition-link-prev-a(href='./'+ prev_name +'.html')
+        .member-transition-link-prev
+          img(src='../assets/img/member/'+ prev_name +'/member-transition-link-'+ prev_name +'.png', alt=prev_alt)
+          p.member-transition-link-status エレクトロニクス事業本部
+            br
+            | 第一営業本部 / 営業
+          p.member-transition-link-name #{prev_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-pc
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+      a.member-transition-link-next-a(href='./'+ next_name +'.html')
+        .member-transition-link-next
+          img(src='../assets/img/member/'+ next_name +'/member-transition-link-'+ next_name +'.png', alt=next_alt)
+          p.member-transition-link-status 情報コミュニケーション事業本部
+            br
+            | トッパンアイデアセンター クリエイティブ本部 / 企画
+          p.member-transition-link-name #{next_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-sp
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+
+  // /contents

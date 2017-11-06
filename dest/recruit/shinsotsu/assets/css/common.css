@@ -1,0 +1,116 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body {
+  font-family: Arial, "游ゴシック","YuGothic",'ヒラギノ角ゴ ProN W3',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+@media screen and (min-width: 800px) {
+  br.sp_only {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  br.pc_only {
+    display: none; } }
+
+.contents-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1; }
+
+@media screen and (max-width: 1200px) {
+  .contents-width {
+    padding: 0 4%;
+    margin: 0 auto; } }
+
+.business-transition-link {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 300px;
+  height: 300px; }
+  .business-transition-link a {
+    display: table-cell;
+    color: #006dc3;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+    .business-transition-link a:visited {
+      color: #006dc3; }
+    .business-transition-link a:link {
+      color: #006dc3; }
+    .business-transition-link a:hover {
+      color: #fff;
+      text-decoration: none; }
+  .business-transition-link .business-transition-link-prev-a,
+  .business-transition-link .business-transition-link-next-a,
+  .business-transition-link .blank {
+    width: 40%; }
+  .business-transition-link .business-transition-link-top-a {
+    width: 20%; }
+  .business-transition-link .business-transition-link-prev-a:hover,
+  .business-transition-link .business-transition-link-next-a:hover {
+    background-color: #4496d7; }
+  .business-transition-link .business-transition-link-top-a:hover {
+    background-color: #75b6ea; }
+  .business-transition-link .fi-thumbnails {
+    font-size: 45px; }
+  .business-transition-link .fa {
+    font-size: 50px; }
+
+@media screen and (max-width: 800px) {
+  .business-transition-link {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 200px;
+    font-size: 12px; }
+    .business-transition-link a {
+      display: table-cell;
+      color: #006dc3;
+      text-decoration: none;
+      display: table-cell;
+      vertical-align: middle;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .business-transition-link a:visited {
+        color: #006dc3; }
+      .business-transition-link a:link {
+        color: #006dc3; }
+      .business-transition-link a:hover {
+        color: #fff;
+        text-decoration: none; }
+    .business-transition-link p {
+      padding: 0 10px; }
+    .business-transition-link .business-transition-link-prev-a,
+    .business-transition-link .business-transition-link-next-a,
+    .business-transition-link .blank {
+      width: 33%; }
+    .business-transition-link .business-transition-link-top-a {
+      width: 33%; }
+    .business-transition-link .business-transition-link-prev-a:hover,
+    .business-transition-link .business-transition-link-next-a:hover {
+      background-color: #4496d7; }
+    .business-transition-link .business-transition-link-top-a:hover {
+      background-color: #75b6ea; }
+    .business-transition-link .fi-thumbnails {
+      font-size: 45px; }
+    .business-transition-link .fa {
+      font-size: 50px; } }

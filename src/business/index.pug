@@ -1,0 +1,61 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "事業紹介｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "事業紹介はこちらから。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "business/index.html";
+  //- visionalist
+  - var visionalist_prm= "rc100102";
+
+block content
+  // contents
+  .business-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='#') 事業紹介
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 BUSINESS
+        .key_visual-inner-txt-wrapper-sub
+          p 事業紹介
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンは1900年の創業以来、「印刷技術」を進化させると同時に、事業活動を推進する中でマーケティング・IT・クリエイティブなどさまざまな知識・ノウハウを蓄積してきました。それらの融合により、トッパンは独自の「印刷テクノロジー」を体系化し、現在も事業分野の拡大に努めています。
+
+  .contents-width
+    .appear
+      .business-contents-wrapper.fiu.animated
+        .business-contents-category
+          a(href='../business/category.html')
+            img(src='../assets/img/business/business-contents-category.png', alt='事業分野へ' class="pc")
+            img(src='../assets/img/business/sp-business-contents-category.png', alt='事業分野へ' class="sp")
+            .txt-wrapper-up
+              h2 事業分野
+              p トッパンの分野について
+        .business-contents-bottom
+          .business-contents-products
+            a(href='../business/products.html')
+              img(src='../assets/img/business/business-contents-products.png', alt='ものづくり・ことづくりへ' class="pc")
+              img(src='../assets/img/business/sp-business-contents-products.png', alt='事業分野へ' class="sp")
+              .txt-wrapper
+                h2 ものつくり・ことつくり
+                p トッパンの製品について
+          .business-contents-research-and-development
+            a(href='../business/research-and-development.html')
+              img(src='../assets/img/business/business-contents-research-and-development.png', alt='研究開発へ' class="pc")
+              img(src='../assets/img/business/sp-business-contents-research-and-development.png', alt='事業分野へ' class="sp")
+              .txt-wrapper
+                h2 研究開発
+                p トッパンの研究・開発について
+
+  // /contents

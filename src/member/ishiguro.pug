@@ -1,0 +1,145 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "石黒庸平｜社員紹介｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "社員紹介④石黒庸平へのインタビュー。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "社員紹介,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "member/ishiguro.html";
+
+  //- visionalist
+  - var visionalist_prm= "rc100110";
+
+  //-menber
+  - var name = 'ishiguro';
+  - var name_j = '石黒 庸平';
+  - var prev_name = 'komatsuka';
+  - var prev_alt = '駒塚 もも';
+  - var next_name = 'nishigaki';
+  - var next_alt = '西垣 操';
+  - var lead_txt = '家電メーカーへ電子部品などを販売するエレクトロニクス事業本部第一営業本部で、国内大手クライアント担当としてフォトマスク等を販売する石黒。成熟産業のなかで新しい価値をつくり出すために奔走する姿に迫る。';
+  - var copy = '成熟産業に新しい風を吹かせるエレクトロニクス営業';
+  - var joined_year = '2009年入社';
+  - var department = 'エレクトロニクス事業本部 第一営業本部 / 営業';
+
+block content
+  // contents
+  div(class='member-detail-kv ' + name)
+    .member-kv-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../member/index.html') 社員紹介
+            | &gt;
+          li
+            a(href='#') #{name_j}さん
+      .member-detail-txt-wrapper
+        .member-detail-txt-wrapper-member.wow.fadeInUp(data-wow-delay='0.4s')
+          h1 MEMBER
+        .member-detail-txt-wrapper-copy.wow.fadeInUp(data-wow-delay='0.7s')
+          p #{copy}
+        .member-detail-txt-wrapper-profile.wow.fadeInUp(data-wow-delay='1.0s')
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+      .member-detail-txt-wrapper-onply-sp.wow.fadeInUp(data-wow-delay='0.4s')
+        p.member-detail-p-onply-sp #{copy}
+
+  .member-lead-contents.wow.fadeInUp(data-wow-delay='1.3s')
+    .member-lead-contents-inner
+      p.member-lead-contents-p #{lead_txt}
+
+  .member-detail-contents-width
+    .appear.member-onply-sp
+      .member-detail-txt-wrapper-only-sp.fiu.animated
+        .member-detail-txt-wrapper-profile
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+        .member-lead-contents-only-sp.fiu.animated
+          .member-lead-contents-inner-only-sp
+            p.member-lead-contents-p-only-sp #{lead_txt}
+
+    .member-contents-1-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents1.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents1.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 無知を認め、教えてもらう姿勢が成長につながった
+            p エレクトロニクス事業本部のクライアントは国内外の大手メーカーが中心です。あまり知られていないことですが、外資企業担当のなかには海外駐在している人間もかなりの数がいます。
+            p そんななかで私は、国内の大手クライアントにフォトマスクを中心とする電子部品を販売しています。フォトマスクってなんだと思われる方がほとんどだと思いますし、私自身、入社前は聞いたことすらない存在でした。半導体に回路図を転写するときの原版のことです。写真でいうネガフィルムのようなものなのですが、おそらくピンと来ないですよね。とにかく、半導体をつくる際には不可欠なモノだと思ってください。扱う商品は知名度のないものですが、クライアントは誰もが知る超大手企業で、取引金額も大きい市場なんですよ。
+            p 文系出身なこともあり、入社当初はエレクトロニクス商材についての知識はほとんどありませんし、ビジネススキルも普通の新卒レベルだったので勉強することだらけでした。最初は黙々と自分で調べていたのですが、とてもそれでは追いつきません。自分で学ぶことは継続しつつも、知らないことは素直に認めて、詳しい人に教わるということも併せて行いました。クライアントも、社内の製造担当も自分よりもはるかにキャリアの長いプロフェッショナルだったので、多くの学びがあり理解が深まりましたし、結果的にコミュニケーションを深めることにもつながりました。
+            p そんな日々を経て、仕事をこなせるようにはなったのですが、ご存知のように、国内の半導体市場は成熟しきっていて、もっと言えば右肩下がりにもなってきています。これまでと同じやり方を続けていると、我々の売り上げも徐々に下がっていくことは免れません。そんな危機的状況のなかで、新しい取り組みをしようという機運がクライアント内/トッパン社内の双方で高まっています。
+
+    .member-contents-2-wrapper
+      .member-detail-contents-inner
+        .member-contents-left.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents2.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents2.png', alt='aaa' class="member-only-sp")
+        .member-contents-right.wow.fadeInRight(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 業界でも新しいクライアントとの連携モデルを提案・実現
+            p 昨年、私が担当した新しい形態のクライアント連携も、そんな潮流の中から生まれた取り組みの１つでした。ここで詳しくお話することはできないのですが、私たちトッパンの悩みを解消しつつ、クライアントにもメリットのある連携モデルです。ある意味でディスカウントを実施するのですが、多く買うほど値引率が良くなるというだけのボリュームディスカウントとはまた違う特徴がありました。
+            p トッパンの悩みというのは、生産量が安定しないというものでした。半導体というのは、需要に大きな波がある製品で、短期間に大量に必要になることもあれば、生産量が落ち着く時期もあります。というと、落ち着く時期に造っておいて、在庫を用意しておけばいいと思われるかもしれませんが、それもできません。同じ仕様のものがずっと必要とされるわけではなく、少しずつ仕様がアップデートされていく製品だからです。フォトマスクも、造る半導体によって仕様が変わるオーダーメイド品。需要の波に付いていくために苦心していました。その悩みを新しいクライアントとの連携によってどう解消したのか気になる方は、まだオープンにできないことなので、いつか私に会うことがあれば聞いてみてください。
+            p この連携モデルは、もちろんクライアントにとっても大きなメリットがありました。そのこともあって、実施前後で取引量は増しています。エレクトロニクスの世界で新しい取り組みというと、どうしてもテクノロジーに目が行くと思いますが、営業という立場から変えられることもあるんです。
+
+    .member-contents-3-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents3.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents3.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 若い社員が会社を動かさなくてはいけない理由
+            p エレクトロニクス事業本部としても、半導体関連以外も含めて、成熟市場でのビジネス展開が中心です。新しい取り組みを行っていかなければ、成長は鈍化していくのは目に見えていて、私のように20年30年と働く世代はその影響を特に強く受けます。だから、若い世代が動いて新しいトッパンをつくっていかないといけないという意識は強いですね。そこで私が目を付けたのは35歳前後の主任・係長社員たちで構成された主任会という組織です。この組織は昔からあったのですが、状報共有や自己啓発などがメインでした。今後はこれを組織的な活動へ発展させていこうと働きかけを行っているところです。
+            p 現状、新しいテクノロジーやサービスを生み出す動きは研究所などの新規事業開発専門部隊が担っています。もちろん、その業務に専念する彼らだからこそ生み出せたんだろうなという素晴らしい成果もあるのですが、一方でクライアントのニーズからは離れたアウトプットであることが多いのも事実です。その点については、ビジネスの現場に立って、クライアントとコミュニケーションを取っている営業が補える部分もあると思っています。
+            p 営業に限らず、新規事業に活きる知見を持つ人は社内にたくさんいるはずなので、そこの連携が進んで新しい取り組みをブーストすれば、トッパンという会社はもっとおもしろく、もっと強くなれるだろうと思っています。自分もそれを引っ張っていく一人だという気概を持って、どんどん発言・行動していきたいですね。
+
+  .privare_photo
+    p PRIVATE PHOTO
+  .member-detail-contents-width
+    .privare_photo_wrapper
+      .privare_photo_wrapper-left
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-left.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 体力の衰えを感じる歳ですが、たまにフットサルをやっています。体を動かす事でリフレッシュしてまた仕事に取り組む事が出来ます。写真は会社の同僚達との1枚ですが、社外の友人ともフットサルなどを通じて交流を持つことで新たな発見もあったります。
+      .privare_photo_wrapper-right
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-right.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 仕事道具です、タブレットPC、手帳、携帯、名刺入れ、メモ帳、ボールペン、ポーチ。外出先でも仕事が出来るような装備です。デジタル化の時代ですが、手帳やメモ帳などアナログな道具も手放せません。出張が多いため、洗面道具が入ったポーチも携帯してます。
+  .member-transition-link-wrapper
+    .member-transition-link
+      a.member-transition-link-prev-a(href='./'+ prev_name +'.html')
+        .member-transition-link-prev
+          img(src='../assets/img/member/'+ prev_name +'/member-transition-link-'+ prev_name +'.png', alt=prev_alt)
+          p.member-transition-link-status 情報コミュニケーション事業本部
+            br
+            | 第二営業本部 / 営業
+          p.member-transition-link-name #{prev_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-pc
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+      a.member-transition-link-next-a(href='./'+ next_name +'.html')
+        .member-transition-link-next
+          img(src='../assets/img/member/'+ next_name +'/member-transition-link-'+ next_name +'.png', alt=next_alt)
+          p.member-transition-link-status 生活・産業事業本部
+            br
+            | ビジネスイノベーションセンター 開発本部 / 技術
+          p.member-transition-link-name #{next_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-sp
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+
+  // /contents

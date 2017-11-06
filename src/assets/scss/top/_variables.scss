@@ -1,0 +1,88 @@
+//
+// Variables
+//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Media Queries
+$point_sp: 768px;
+
+// font
+// -------------------------
+$font_base: "游ゴシック体", "Yu Gothic", YuGothic,Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+$font_sans: 'Open Sans', sans-serif;
+
+// width
+// -------------------------
+$base_width: 1200px;
+
+// link color
+// -------------------------
+$link_color: #006abc;
+$link_color_hover: #006abc;
+
+// mixin
+// -------------------------
+@mixin tsn{
+	transition: .25s;
+}
+
+
+@-webkit-keyframes horizontal1 {
+	0% {
+		-webkit-transform:translate( -4px,0px); 
+		transform:translate( -4px,0px); 
+		@media only screen and (max-width: $point_sp) {
+			-webkit-transform:translate( -2px,0px); 
+			transform:translate( -2px,0px); 			
+		}
+	}
+	100% {
+		-webkit-transform:translate(  0px,0px); 
+		transform:translate(  0px,0px); 
+	}
+}
+
+@-webkit-keyframes horizontal2 {
+	0% {
+		-webkit-transform:translate(  4px,0px); 
+		transform:translate(  4px,0px); 
+		@media only screen and (max-width: $point_sp) {
+			-webkit-transform:translate( 2px,0px); 
+			transform:translate( 2px,0px); 			
+		}
+	}
+	100% {
+		-webkit-transform:translate(  0px,0px); 
+		transform:translate(  0px,0px); 
+	}
+}
+
+@-webkit-keyframes vertical {
+	0% {
+		-webkit-transform:translate(0px,-3px); 
+		transform:translate(0px,-3px);
+		@media only screen and (max-width: $point_sp) {
+			-webkit-transform:translate(0px,-2px); 
+			transform:translate(0px,-2px);
+		}
+	}
+	100% {
+		-webkit-transform:translate(0px,  0px); 
+		transform:translate(0px,  0px); 
+	}
+}
+
+@-webkit-keyframes vertical2 {
+	0% {
+		-webkit-transform:translate(0px,3px); 
+		transform:translate(0px,3px); 
+		@media only screen and (max-width: $point_sp) {
+			-webkit-transform:translate(0px,2px); 
+			transform:translate(0px,2px);
+		}
+	}
+	100% {
+		-webkit-transform:translate(0px,  0px); 
+		transform:translate(0px,  0px); 
+	}
+}

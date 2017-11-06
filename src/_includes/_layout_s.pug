@@ -1,0 +1,28 @@
+block variables
+append variables
+  //- click_event
+  - var entry_prm= "rc1en100";
+  - var mypage_prm= "rc1my100";
+
+doctype html
+html(lang=pageLang)
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + pageOgpType + ": http://ogp.me/ns/" + pageOgpType + "#")
+    block meta
+      include ./_meta
+
+  body
+    block header
+      include ./_header
+
+    block content
+
+    block scroll
+      include ./_scrollup
+
+    block footer
+      include ./_footer
+
+    block script
+      include ./_script_s
+
+    include ./_visionalist

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+.header {
+  background-color: #041036;
+  width: 100%;
+  height: 80px;
+  padding: 0 280px 0 270px;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .header .logo {
+    float: left;
+    width: 270px;
+    position: absolute;
+    left: 20px; }
+  .header .nav-pc {
+    width: 100%; }
+    .header .nav-pc .nav-contents-link {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      text-align: center; }
+      .header .nav-pc .nav-contents-link .txt-link {
+        padding: 31px 0;
+        display: block;
+        line-height: 1.3; }
+      .header .nav-pc .nav-contents-link li {
+        display: table-cell;
+        vertical-align: middle; }
+    .header .nav-pc .nav-external-link {
+      position: absolute;
+      right: 20px;
+      top: 16px; }
+      .header .nav-pc .nav-external-link .header-btn {
+        margin-top: 10px; }
+        .header .nav-pc .nav-external-link .header-btn:hover {
+          opacity: 0.6; }
+      .header .nav-pc .nav-external-link li {
+        margin-right: 25px;
+        float: left; }
+
+@media screen and (min-width: 1000px) {
+  .hide-navi {
+    display: none; } }
+
+@media screen and (max-width: 1110px) {
+  .header .logo {
+    left: 5px; }
+  .header .nav-pc .nav-external-link {
+    right: 5px; } }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    position: fixed;
+    z-index: 9999;
+    height: 50px;
+    padding: 0; }
+    .header .nav-pc {
+      display: none; }
+    .header .logo {
+      float: left;
+      width: 170px;
+      position: absolute;
+      left: -5px; }
+  .navOpen .nav-pc {
+    margin-top: 50px; }
+  /* ナビゲーションアイコン */
+  .navBtn {
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer; }
+    .navBtn span {
+      display: block;
+      height: 4px;
+      width: 100%;
+      background: #fff;
+      border-radius: 2px;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out; }
+      .navBtn span:nth-of-type(2), .navBtn span:nth-of-type(3) {
+        margin-top: 5px; }
+  .navOpen .navBtn span:nth-of-type(1) {
+    -webkit-transform: translateY(9px) translateX(0) rotate(45deg);
+    transform: translateY(9px) translateX(0) rotate(45deg); }
+  .navOpen .navBtn span:nth-of-type(2) {
+    margin-top: 5px;
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px); }
+  .navOpen .navBtn span:nth-of-type(3) {
+    -webkit-transform: translateY(-9px) translateX(0) rotate(-45deg);
+    transform: translateY(-9px) translateX(0) rotate(-45deg); } }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+/* オーバーレイ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #041036;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  z-index: 9999; }
+
+/* ナビゲーション */
+.hide-navi {
+  overflow: auto;
+  position: fixed;
+  top: 50px;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #041036;
+  opacity: 0;
+  z-index: 9999;
+  text-align: left;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 15px; }
+
+.navOpen .hide-navi {
+  opacity: 1;
+  right: 0; }
+
+/* アコーディオン */
+.acMenu .navi-title {
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 2.5; }
+  .acMenu .navi-title span {
+    position: relative; }
+    .acMenu .navi-title span::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      right: 15px;
+      width: 16px;
+      height: 16px;
+      margin-top: -5px;
+      background-image: url(../img/sp-menu-plus.png);
+      background-repeat: no-repeat; }
+
+.acMenu .navi-link {
+  display: none; }
+  .acMenu .navi-link .navi-link-one-column {
+    width: 100%; }
+  .acMenu .navi-link li {
+    width: 50%;
+    float: left; }
+  .acMenu .navi-link a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 100; }
+
+.acMenu .navi-border-btm {
+  margin: 0 5px;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  font-size: 16px;
+  font-weight: bold; }
+
+.acMenu .add_plus span::after {
+  top: 21px;
+  background-image: url(../img/sp-menu-minus.png); }
+
+.sp-notacMenu .navi-title {
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 2.5; }
+
+.sp-notacMenu .navi-title-external-link {
+  position: relative; }
+  .sp-notacMenu .navi-title-external-link::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 11px;
+    width: 12px;
+    height: 13px;
+    margin-top: -5px;
+    background-image: url(../img/gnav_close.png);
+    background-repeat: no-repeat;
+    background-size: 12px; }
+
+.sp-notacMenu li {
+  width: 50%;
+  float: left; }
+
+.sp-notacMenu a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 100; }
+  .sp-notacMenu a img {
+    margin-top: 7px;
+    margin-bottom: 7px; }
+
+.sp-notacMenu .navi-border-btm {
+  margin: 0 5px;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  font-size: 13px;
+  font-weight: 100; }
+
+.hide-navi-logo {
+  text-align: center;
+  padding-top: 50px; }
+  .hide-navi-logo img {
+    width: 50%; }

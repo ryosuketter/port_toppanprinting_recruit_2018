@@ -1,0 +1,629 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "ものつくり・ことつくり｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "トッパンのものつくり・ことつくりのご紹介。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "トッパンの製品（もの・こと）,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "business/products.html";
+  //- visionalist
+  - var visionalist_prm= "rc100104";
+  //- products
+  - var products_category_info = "情報コミュニケーション";
+  - var products_category_life = "生活・産業";
+  - var products_category_elec = "エレクトロニクス";
+
+  - var products01_title = "マーケティング";
+  - var products02_title = "ペーパーレス申込システム";
+  - var products03_title = "エアホールドパウチ";
+  - var products04_title = "セキュリティソリューション";
+  - var products05_title = "透明バリアフィルム";
+  - var products06_title = "空気電池";
+  - var products07_title = "BPOソリューション";
+  - var products08_title = "デジタルサイネーションソリューション ReView";
+  - var products09_title = "カートカン";
+  - var products10_title = "消費行動研究室";
+  - var products11_title = "銅タッチパネル";
+  - var products12_title = "凸版文久体";
+  - var products13_title = "ギフトプレミアム";
+  - var products14_title = "電子ペーパー";
+  - var products15_title = "360°空間シミュレータ";
+
+block content
+  // contents
+  .business-p-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../business/index.html') 事業紹介
+            | &gt;
+          li
+            a(href='#') ものつくり・ことつくり
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 PRODUCTS
+        .key_visual-inner-txt-wrapper-sub
+          p ものつくり・ことつくり
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンが手がける製品やサービスの一例をご紹介します。
+
+  .appear
+    .contents-width-business-p
+      .business-p-contents-wrapper.fiu.animated.clearfix
+        .business-p-contents-wrapper-detail
+          a(href="#sample1", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-01.png', alt='マーケティング')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products01_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample1", class="modal")
+            img(src='../assets/img/business/business-p-contents-01.png', alt='マーケティング')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products01_title}
+        .business-p-contents-wrapper-detail.white-bg
+          a(href="#sample2", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-02.png', alt='ペーパーレス申込システム')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products02_title}
+        .business-p-contents-wrapper-detail-sp.white-bg
+          a(href="#sample2", class="modal")
+            img(src='../assets/img/business/business-p-contents-02.png', alt='ペーパーレス申込システム')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products02_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample3", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-03.png', alt='エアホールドパウチ')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products03_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample3", class="modal")
+            img(src='../assets/img/business/business-p-contents-03.png', alt='エアホールドパウチ')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products03_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample4", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-04.png', alt='セキュリティソリューション')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products04_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample4", class="modal")
+            img(src='../assets/img/business/business-p-contents-04.png', alt='セキュリティソリューション')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products04_title}
+        .business-p-contents-wrapper-detail.white-bg
+          a(href="#sample5", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-05.png', alt='透明バリアフィルム')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products05_title}
+        .business-p-contents-wrapper-detail-sp.white-bg
+          a(href="#sample5", class="modal")
+            img(src='../assets/img/business/business-p-contents-05.png', alt='透明バリアフィルム')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products05_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample6", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-06.png', alt='空気電池')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products06_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample6", class="modal")
+            img(src='../assets/img/business/business-p-contents-06.png', alt='空気電池')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products06_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample7", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-07.png', alt='BPOソリューション')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products07_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample7", class="modal")
+            img(src='../assets/img/business/business-p-contents-07.png', alt='BPOソリューション')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products07_title}
+        .business-p-contents-wrapper-detail.white-bg
+          a(href="#sample8", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-08.png', alt='デジタルサイネーションソリューションReview')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products08_title}
+        .business-p-contents-wrapper-detail-sp.white-bg
+          a(href="#sample8", class="modal")
+            img(src='../assets/img/business/business-p-contents-08.png', alt='デジタルサイネーションソリューションReview')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products08_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample9", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-09.png', alt='カートカン')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products09_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample9", class="modal")
+            img(src='../assets/img/business/business-p-contents-09.png', alt='カートカン')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_life}
+              p.business-p-contents-wrapper-txt-title #{products09_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample10", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-10.png', alt='消費行動研究室')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products10_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample10", class="modal")
+            img(src='../assets/img/business/business-p-contents-10.png', alt='消費行動研究室')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products10_title}
+        .business-p-contents-wrapper-detail.white-bg
+          a(href="#sample11", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-11.png', alt='銅タッチパネル')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_elec}
+              p.business-p-contents-wrapper-txt-title #{products11_title}
+        .business-p-contents-wrapper-detail-sp.white-bg
+          a(href="#sample11", class="modal")
+            img(src='../assets/img/business/business-p-contents-11.png', alt='銅タッチパネル')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_elec}
+              p.business-p-contents-wrapper-txt-title #{products11_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample12", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-12.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products12_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample12", class="modal")
+            img(src='../assets/img/business/business-p-contents-12.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products12_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample13", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-13.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products13_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample13", class="modal")
+            img(src='../assets/img/business/business-p-contents-13.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products13_title}
+        .business-p-contents-wrapper-detail.white-bg
+          a(href="#sample14", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-14.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products14_title}
+        .business-p-contents-wrapper-detail-sp.white-bg
+          a(href="#sample14", class="modal")
+            img(src='../assets/img/business/business-p-contents-14.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products14_title}
+        .business-p-contents-wrapper-detail
+          a(href="#sample15", class="modal")
+            .business-p-contents-img-wrapper
+              img(src='../assets/img/business/business-p-contents-15.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products15_title}
+        .business-p-contents-wrapper-detail-sp
+          a(href="#sample15", class="modal")
+            img(src='../assets/img/business/business-p-contents-15.png', alt='凸版文久体')
+            .business-p-contents-wrapper-txt
+              p.business-p-contents-wrapper-txt-category #{products_category_info}
+              p.business-p-contents-wrapper-txt-title #{products15_title}
+
+  .business-transition-link-wrapper
+    .business-transition-link
+      a.business-transition-link-prev-a(href='../business/category.html')
+        .business-transition-link-prev
+          i.fa.fa-angle-double-left(aria-hidden='true')
+          p 事業分野を知る
+      a.business-transition-link-top-a(href='../business/index.html')
+        .business-transition-link-top
+          i.fi-thumbnails
+          p 事業紹介の
+            br.sp_only
+            |トップに戻る
+      a.business-transition-link-next-a(href='../business/research-and-development.html')
+        .business-transition-link-next
+          i.fa.fa-angle-double-right(aria-hidden='true')
+          p 研究・開発を知る
+
+  // CSSで非表示に設定
+  .hidden
+    #sample1.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-01.png', alt='マーケティング')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-01.png', alt='マーケティング')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products01_title}
+        p.modal-window-right-contents-txt
+          | トッパンは、お客さまの「マーケティング活動」や「コーポレートコミュニケーション活動」において、常に最適なメディア、システム、仕組みを提供しています。
+          br
+          | トッパンでは「マーケティング」、「IT」、「クリエイティブ」の3つの領域における専門スタッフを擁してトータルソリューションを提案するとともに、営業・企画・プロデュース部門がお客さまのニーズに即したワンストップのサービスを提供します。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/solution/service/sp/index.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample15')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample15')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample2')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample2')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample2.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-02.png', alt='ペーパーレス申込システム')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-02.png', alt='ペーパーレス申込システム')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper.clearfix
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title.adddetail-nega-margin-top-paper #{products02_title}
+        p.modal-window-right-contents-txt
+          | タブレット端末へのタッチペンによる手書き入力や、運転免許証の券面情報読み取りで、申し込み受付業務を行うことができるシステム「スピードエントリー・プラス」。端末の提供から、アプリ開発、データセンターの提供まで行います。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/solution/service/speedentry_plus.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample1')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample1')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample3')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample3')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample3.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-03.png', alt='エアホールドパウチ')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-03.png', alt='エアホールドパウチ')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_life}
+          p.modal-window-left-contents-title #{products03_title}
+        p.modal-window-right-contents-txt
+          | 「エアホールドパウチ」はトッパンが開発した、空気の力で自立する液体製品用スタンディングパウチ。パウチのサイド部分に、空気を縦方向に封入することで自立性を向上。見た目に美しいだけでなく、持ちやすさ・注ぎやすさを実現。さらに、空気を封入した部分から簡単に開封して空気を抜けるため、小さく折りたたんで廃棄できます。その空気を利用するという発想のユニークさや機能性、環境に配慮した容器であるということが評価され、第38回木下賞（改善合理化部門）を受賞しました。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/news/2014/05/newsrelease140530_2.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample2')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample2')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample4')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample4')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample4.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-04.png', alt='セキュリティソリューション')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-04.png', alt='セキュリティソリューション')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products04_title}
+        p.modal-window-right-contents-txt
+          | トッパンセキュリティソリューションの強み。それは多角的なビジネス展開で培った”安心・安全・便利”な製品と、高度な品質、お得意様の事業革新に応えるサービス力です。市場分析、開発、製造、アフタフォローまでトータルでご提供することで、貴社ビジネスの課題解決に貢献いたします。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/solution/service/security.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample3')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample3')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample5')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample5')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample5.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-05.png', alt='透明バリアフィルム')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-05.png', alt='透明バリアフィルム')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_life}
+          p.modal-window-left-contents-title #{products05_title}
+        p.modal-window-right-contents-txt
+          | 透明バリアフィルムは、水蒸気、酸素などのガス透過を防ぐ機能を備えた透明フィルムです。
+          br
+          | 蒸着とコーティングの組み合わせにより優れたバリア性能を発揮する「GL FILM」は、透明蒸着フィルムの世界トップシェア製品で、包装材料向けを中心に全世界で販売されています。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/living-industry/highfunction_energy/barrier_film/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample4')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample4')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample6')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample6')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample6.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-06.png', alt='空気電池')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-06.png', alt='空気電池')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_life}
+          p.modal-window-left-contents-title #{products06_title}
+        p.modal-window-right-contents-txt
+          | トッパンは、世界初となる紙製容器でできた非常用マグネシウム空気電池「マグボックス」を古河電池株式会社と共同で開発しました。
+          br
+          | 災害時の最も重要な問題の一つに、携帯機器の電池切れによる情報の遮断があります。「マグボックス」は、マグネシウムを負極物質、空気中の酸素を正極物質とし、水や海水を投入して発電させる電池です。大容量かつ長期間保存可能で、非常時に水を入れるだけで、多くの携帯機器に電力を供給することが出来ます。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/news/2016/04/newsrelease160407.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample5')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample5')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample7')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample7')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample7.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-07.png', alt='BPOソリューション')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-07.png', alt='BPOソリューション')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products07_title}
+        p.modal-window-right-contents-txt
+          | お客さまの業務を効率化する「バックオフィスサービス」、コミュニケーションを最適化する「顧客コンタクトサービス」、生産・物流を合理化する「オペレーション支援サービス」という大きな3つのサービスを軸にお客さまのニーズに応じた最適な組み合わせでソリューションを提供しています。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/solution/service/bpo/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample6')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample6')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample8')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample8')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample8.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-08.png', alt='デジタルサイネーションソリューション ReView')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-08.png', alt='デジタルサイネーションソリューション ReView')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title.adddetail-nega-margin-top #{products08_title}
+        p.modal-window-right-contents-txt
+          | 情報を「表示して見せる」から「魅せて動かす」行動喚起型へ。それが、デジタルサイネージ技術を活用した次世代販促コミュニケーションメディア「ReView」です。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/solution/service/digitalsignage.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample7')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample7')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample9')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample9')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample9.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-09.png', alt='カートカン')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-09.png', alt='カートカン')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_life}
+          p.modal-window-left-contents-title #{products09_title}
+        p.modal-window-right-contents-txt
+          | 用紙に間伐材を含む国産材を利用した紙製飲料容器です。「GL FILM」を使用することで、「紙パック」としてリサイクル可能、常温での長期保存を実現した製品です。商品企画から充填まで一貫したサポート体制を構築しています。環境配慮、廃棄適性、差別化の観点から採用が増えています。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/living-industry/cartocan/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample8')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample8')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample10')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample10')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample10.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-10.png', alt='消費行動研究室')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-10.png', alt='消費行動研究室')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products10_title}
+        p.modal-window-right-contents-txt
+          | お客さまのマーケティング課題について専門のリサーチ部門が、ユーザー調査・ブランド診断・効果測定などを行います。また、アイカメラを用いた視線解析を駆使し、幅広い調査・分析・提案を行っています。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/solution/service/service_071.html' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample9')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample9')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample11')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample11')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample11.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-11.png', alt='銅タッチパネル')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-11.png', alt='銅タッチパネル')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_elec}
+          p.modal-window-left-contents-title #{products11_title}
+        p.modal-window-right-contents-txt
+          | メッシュ状にエッチング加工された銅を電極に使用した静電容量型のタッチパネルです。銅の特性を活かした低抵抗が特長で、操作性の向上と大型化・軽量化を実現します。タッチパネルの企画・設計からモジュールの生産までを一貫して内製化することで、お客さまのニーズに合わせたタッチパネルの提供を可能にしました。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/electronics/display/touch/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample10')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample10')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample12')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample12')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample12.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-12.png', alt='凸版文久体')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-12.png', alt='凸版文久体')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products12_title}
+        p.modal-window-right-contents-txt
+          | トッパンは、自社オリジナル書体をもとに、電子媒体にも読みやすい新書体「凸版文久体」を開発しています。デジタルコンテンツに最適化されたデザインで、スマートフォンやタブレット端末上での読書体験をサポートします。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/bunkyutai/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample11')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample11')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample13')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample13')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample13.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-13.png', alt='ギフトプレミアム')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-13.png', alt='ギフトプレミアム')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products13_title}
+        p.modal-window-right-contents-txt
+          | 店頭での商品購入のきっかけとなるオマケ、抽選でもらえる景品、雑誌付録など、プレミアムの企画から生産までを行っています。品質と安全に配慮し、ターゲット層の心をつかむ魅力のある製品を提供しています。
+      a.modal-move.modal-move-prev.for_pc(href='#sample12')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample12')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample14')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample14')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample14.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-14.png', alt='電子ペーパー')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-14.png', alt='電子ペーパー')
+      .modal-window-right-contents
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products14_title}
+        p.modal-window-right-contents-txt
+          | 紙の読みやすさと、自由に書き換えができる電子ディスプレイの長所をあわせ持った次世代の反射型表示媒体が「電子ペーパー」です。
+        a.modal-window-right-contents-btn(href='http://www.toppan.co.jp/denshipaper/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample13')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample13')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample15')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample15')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+    #sample15.modal-window.clearfix
+      .modal-window-left-contents
+        img.main-img.for_pc(src='../assets/img/business/business-p-contents-modal-window-15.png', alt='360°空間シミュレータ')
+        img.main-img.for_sp(src='../assets/img/business/sp-business-p-contents-modal-window-15.png', alt='360°空間シミュレータ')
+      .modal-window-right-contents.adjust-height
+        .modal-window-right-ttl-wrapper
+          span.modal-window-left-contents-label #{products_category_info}
+          p.modal-window-left-contents-title #{products15_title}
+        p.modal-window-right-contents-txt
+          | 360°撮影した静止画や3DCGを使用して、マンションや戸建、レストラン、結婚式場など様々な施設の空間を臨場感あふれる演出で紹介することができます。特殊な画像処理を施すことで、キッチンや床、壁、カーテンなどのカラーコーディネートや、動画や音声、BGMを組み込んだ感性に訴えかける演出も可能です。GoogleMapとの連携、WEBページへのリンク、夜景シーンへの切り替えなど、様々なオプション機能も取り揃えており、多様な展開が可能です。
+        a.modal-window-right-contents-btn(href='http://www.panocloud360.com/' target="_blank") 関連サイトを見る
+      a.modal-move.modal-move-prev.for_pc(href='#sample14')
+        img(src='../assets/img/business/prev-pc.png', alt='戻るボタン')
+      a.modal-move.modal-move-prev.for_sp(href='#sample14')
+        img(src='../assets/img/business/prev-sp.png', alt='戻るボタン')
+      a.modal-move.modal-move-next.for_pc(href='#sample1')
+        img(src='../assets/img/business/next-pc.png', alt='進むボタン')
+      a.modal-move.modal-move-next.for_sp(href='#sample1')
+        img(src='../assets/img/business/next-sp.png', alt='進むボタン')
+      a.modal-close.for_pc(href='javascript:void(0);')
+        img(src='../assets/img/business/close-pc.png', alt='閉じるボタン')
+      a.modal-close.for_sp(href='javascript:void(0);')
+        img(src='../assets/img/business/close-sp.png', alt='閉じるボタン')
+  // CSSで非表示に設定
+
+  // /contents

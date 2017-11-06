@@ -1,0 +1,145 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "山﨑拓｜社員紹介｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "社員紹介③山﨑拓へのインタビュー。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "社員紹介,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "member/yamazaki.html";
+
+  //- visionalist
+  - var visionalist_prm= "rc100109";
+
+  //-menber
+  - var name = 'yamazaki';
+  - var name_j = '山崎 拓';
+  - var prev_name = 'terabayashi';
+  - var prev_alt = '寺林 真綸';
+  - var next_name = 'komatsuka';
+  - var next_alt = '駒塚 もも';
+  - var lead_txt = '主に食品業界クライアントに対してパッケージを提供するパッケージソリューション事業部第二営業部に所属する山﨑。クライアントの信頼を勝ち取り、社内の設計チームや製造チームの力を引き出していくために意識している営業スタイルとは？';
+  - var copy = '商品開発の一端を担う食品パッケージ営業';
+  - var joined_year = '2009年入社';
+  - var department = '生活・産業事業本部 パッケージソリューション事業部 第二営業本部 / 営業';
+
+block content
+  // contents
+  div(class='member-detail-kv ' + name)
+    .member-kv-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../member/index.html') 社員紹介
+            | &gt;
+          li
+            a(href='#') #{name_j}さん
+      .member-detail-txt-wrapper
+        .member-detail-txt-wrapper-member.wow.fadeInUp(data-wow-delay='0.4s')
+          h1 MEMBER
+        .member-detail-txt-wrapper-copy.wow.fadeInUp(data-wow-delay='0.7s')
+          p #{copy}
+        .member-detail-txt-wrapper-profile.wow.fadeInUp(data-wow-delay='1.0s')
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+      .member-detail-txt-wrapper-onply-sp.wow.fadeInUp(data-wow-delay='0.4s')
+        p.member-detail-p-onply-sp #{copy}
+
+  .member-lead-contents.wow.fadeInUp(data-wow-delay='1.3s')
+    .member-lead-contents-inner
+      p.member-lead-contents-p #{lead_txt}
+
+  .member-detail-contents-width
+    .appear.member-onply-sp
+      .member-detail-txt-wrapper-only-sp.fiu.animated
+        .member-detail-txt-wrapper-profile
+          p #{joined_year}
+          p #{department}
+          p.member-detail-txt-wrapper-profile-name #{name_j}
+        .member-lead-contents-only-sp.fiu.animated
+          .member-lead-contents-inner-only-sp
+            p.member-lead-contents-p-only-sp #{lead_txt}
+
+    .member-contents-1-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents1.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents1.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 受注したら終わりではなく、クライアントの売上を伸ばすことを本気で考える
+            p 入社以来、一貫して営業畑、食品業界畑を歩んできました。最初は内勤で、担当は印刷物の入稿管理。担当クライアントからの発注を取り求めて、社内の制作・製造部隊に依頼し、進捗管理する業務です。その後、同じクライアントへの外勤営業として、新商品のパッケージや、それに付随する販促グッズなどの提案を行いました。今は担当クライアントが変わりましたが、同じくパッケージをメインに外勤営業をしています。
+            p トッパンで営業をする醍醐味は、クライアントの課題にいろいろな角度から関われることです。新商品パッケージの営業の場合、最初の窓口になるのは先方の商品開発担当者ですが、研究部門の方や、販促部門の方、購買担当の方など、様々な方とお話ができます。
+            p パッケージは商品のそのものの一部といっても過言ではないので、商品戦略の根本のところから関われていると言えます。また、商品が売れれば売れるほど、パッケージの発注もいただけるので、売上を伸ばすことに貢献しようという気持ちは、広告物やカタログなど、納品していくらという関わり方の会社よりも強いかもしれません。
+            p そんなコミット具合を見ていただけたのか、日頃築いている人間関係のおかげか、信頼いただけていると実感できた出来事がありました。製品のパッケージ用に、大勢の人物が写ったカットを撮影したときのことです。エキストラ役は先方社員のみなさんが務めていらっしゃったのですが、その中に「山崎さんも入りなよ」と入れていただいて。外部の人間でありながら、製品の顔とも言えるパッケージに写り込めたことは、印象深い経験です。
+
+    .member-contents-2-wrapper
+      .member-detail-contents-inner
+        .member-contents-left.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents2.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents2.png', alt='aaa' class="member-only-sp")
+        .member-contents-right.wow.fadeInRight(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 クライアントも、社内も、モノつくりをする仲間
+            p 営業は、クライアントの最大の理解者であり、代弁者でもあります。ときに、トッパン社内の制作チームや製造チームの嫌がる要望を伝えなくてはいけないこともあります。パッケージの提案は、10回提案して1回採用いただけるかどうかというところ。採用されないことが多いとモチベーションも下がりがちですが、採用されない9回にも全力を尽くすからこそ、1回の採用があると伝え、手間暇を惜しまず提案準備してもらいます。また、製造段階では、タイトなスケジュールで「何とかできないか？」という相談を受けることも少なくありません。工場に負荷をかけることを承知で、お願いしないといけない瞬間もあります。
+            p 無茶のお願いを聞き入れてもらうために意識していることは、普段からコミュニケーションを取ることと、あくまでお願いしているのだという姿勢を忘れないこと。営業として、売上を立てているという自負があると、社内には横柄な態度になってしまいがちです。でも、そんな態度をとっても、結果誰も楽しくないんですよね。気持ちよく働いてもらったほうが、アウトプットもいいものになってクライアントの満足につながり、私自身の目的もより良い形で達成できます。
+            p クライアントに対しても、社内に対しても、一緒にモノつくりをする仲間だと認識してもらうのが一番です。私自身、売上額も気にはしますが、それ以上に新しいことがしたいという意識のほうが強くあります。例えば、あるクライアントの主戦場である冷凍食品。スーパーの冷凍ケースを見ても、同じような形・サイズの袋ばかり並んでいます。形状や素材を工夫することで、売り場でインパクトを与えるような新提案ができるんじゃないかとワクワクしています。
+
+    .member-contents-3-wrapper
+      .member-detail-contents-inner
+        .member-contents-right.wow.fadeInUp(data-wow-delay='0.4s')
+          img(src='../assets/img/member/'+name+'/member-'+name+'-contents3.png', alt='aaa' class="member-only-pc")
+          img(src='../assets/img/member/'+name+'/sp-member-'+name+'-contents3.png', alt='aaa' class="member-only-sp")
+        .member-contents-left.wow.fadeInLeft(data-wow-delay='0.8s')
+          .member-contents-txt
+            h2 モノつくりとコトつくりのイイトコどり
+            p トッパンの良さは、モノつくりとコトつくりの両方が、ちょうどいいバランスで味わえること。コトの企画ができる会社は広告代理店はじめ、いろいろあると思いますが、モノを製造する部分まで一貫して担える会社はそう多くないと思います。今いる社員も、そんな絶妙なバランスに惹かれて入社した人が多いので、コトだけ考えて後はよろしくという要領の良いタイプではないし、寡黙にモノづくりだけやっていますという不器用なタイプでもなくて、楽しくやりつつも地に足着いたところもある雰囲気です。企画や製造に興味があるけれど、広告代理店やメーカーがいまいちピンと来ないという人は、一度トッパンのOBに会って話を聞いてみてほしいですね。
+            p 特に、営業志望で商品開発にも携わりたいと思っている人にはオススメです。なぜなら、営業という職種で、製品が未完成の段階から関わり、商品戦略の方向付けの一端に携われることは稀だからです。広告代理店の営業の場合、クライアントの製品をどう多くの人に知ってもらうか、どうやって良いイメージを築くかを考えるのが主な仕事。メーカーの営業の場合、小売り企業のバイヤーに製品の魅力を伝え、多くの棚に置いてもらうことが主な仕事。どちらも、製品自体は完成してからのアプローチなんですよね。
+            p トッパンのクライアントには、世の中に新しい価値を生み出していこうという気概のある企業が多くあります。そんな気概に、幅広い事業展開で得たノウハウで答えていく仕事は、非常にやりがいがあっておもしろいものですよ。
+
+  .privare_photo
+    p PRIVATE PHOTO
+  .member-detail-contents-width
+    .privare_photo_wrapper
+      .privare_photo_wrapper-left
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-left.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 一緒に仕事をするチームでのタコ焼きパーティーin先輩社員のご自宅（新年会）。上司含め若いメンバーが多く、集まって飲むのが大好き！チームの結束力も高まり、（残念ながらインフルで欠席者がいましたが笑）今年も目標達成に向け頑張るぞ！
+      .privare_photo_wrapper-right
+        img(src='../assets/img/member/'+name+'/member-'+name+'-privare_photo_wrapper-right.png', alt='aaa')
+        .privare_photo_wrapper-txt
+          p 中高サッカー部時代の友人との休日ゴルフ。学生時代の友人とは今でもゴルフやBBQ、飲みに行ってます。昔からの友人と会っている時間は本当に幸せで、リフレッシュできる瞬間です。学生時代の友達は一生の宝物です！
+  .member-transition-link-wrapper
+    .member-transition-link
+      a.member-transition-link-prev-a(href='./'+ prev_name +'.html')
+        .member-transition-link-prev
+          img(src='../assets/img/member/'+ prev_name +'/member-transition-link-'+ prev_name +'.png', alt=prev_alt)
+          p.member-transition-link-status 情報コミュニケーション事業本部
+            br
+            | 第十営業本部 / 営業
+          p.member-transition-link-name #{prev_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-pc
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+      a.member-transition-link-next-a(href='./'+ next_name +'.html')
+        .member-transition-link-next
+          img(src='../assets/img/member/'+ next_name +'/member-transition-link-'+ next_name +'.png', alt=next_alt)
+          p.member-transition-link-status 情報コミュニケーション事業本部
+            br
+            | 第二営業本部 / 営業
+          p.member-transition-link-name #{next_alt}
+      a.member-transition-link-top-a(href='./index.html').member-only-sp
+        .member-transition-link-top
+          i.fi-thumbnails
+          p 社員紹介のトップに戻る
+
+  // /contents

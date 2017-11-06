@@ -1,0 +1,65 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "プロジェクトストーリー｜凸版印刷｜2018年度新卒採用サイト";
+  - var pageDescription= "プロジェクトストーリーはこちらから。凸版印刷株式会社の2018年度新卒採用サイトです。トッパンの事業や製品、社員へのインタビュー、プロジェクトストーリー、採用担当者メッセージ、募集要項、よくあるご質問などをご紹介しています。";
+  - var pageKeywords= "ストーリー,凸版印刷";
+  //- Optional
+  - var pageOgpTitle= "";
+  - var pageOgpImage= "test";
+  - var pageLang= "ja";
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "story/index.html";
+  //- visionalist
+  - var visionalist_prm= "rc100115";
+
+block content
+  // contents
+  .story-key_visual
+    .key_visual-inner
+      .key_visual-inner-bread_crumb
+        ul
+          li
+            a(href='../') トップページ
+            | &gt;
+          li
+            a(href='../story/index.html') プロジェクトストーリー
+      .key_visual-inner-txt-wrapper.wow.fadeInUp(data-wow-delay='0.1s')
+        .key_visual-inner-txt-wrapper-hd
+          h1 PROJECT STORY
+        .key_visual-inner-txt-wrapper-sub
+          p プロジェクトストーリー
+        .key_visual-inner-txt-wrapper-txt
+          p トッパンの仕事はチームワークが命。様々な職種の社員が協力しあいながらプロジェクトを進めていきます。実際の受注事例をもとにご紹介します。
+  .contents-width
+    .appear
+      .business-contents-wrapper.fiu.animated
+        .business-contents-bottom.cf
+          .story_content
+            .story_content__img.business-contents-products
+              a(href='01.html')
+                img(src='../assets/img/story/story-1-bg.png', alt='' class="pc")
+                img(src='../assets/img/story/sp-story-1-bg.png', alt='' class="sp")
+
+                .txt-wrapper.story-content-txt
+                  .txt_img--1
+                  h2.project-story-title
+                    | 大正製薬
+                    span.br 「リポビタンD」×「ラブライブ！」
+            .story_content__txt
+              p 大正製薬が誇るNo.1栄養ドリンク剤「リポビタンD」。2010年代有数のヒットコンテンツ「ラブライブ！」。それぞれが多大なブランド力を持つ両者を取り持ったプロジェクトの中心人物3人が語る、大型コラボレーションを行う苦労ややりがいとは？
+          .story_content
+            .story_content__img.business-contents-research-and-development
+              a(href='02.html')
+                img(src='../assets/img/story/story-2-bg.png', alt='' class="pc")
+                img(src='../assets/img/story/sp-story-2-bg.png', alt='' class="sp")
+                .txt-wrapper.story-content-txt
+                  .txt_img--2
+                  h2.project-story-title
+                    | 味の素株式会社
+                    span.br トッピング入り粉ドレッシング「TossSala®」
+            .story_content__txt
+              p “トッピング入り粉ドレッシング”という、これまでになかった市場を開拓した味の素の｢TossSala®｣。トッパンは、この新製品の包材にテスト販売段階から携わり続けている。クライアント担当営業、パッケージ企画、紙器設計、それぞれの立場からプロジェクトを担った3人に話を聞いた。
+
+  // /contents

@@ -1,0 +1,207 @@
+[class$="-key_visual"], [class*="-key_visual "] {
+  background-size: cover;
+  margin-bottom: -80px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 80px; }
+
+@media screen and (max-width: 1000px) {
+  [class$="-key_visual"], [class*="-key_visual "] {
+    margin-top: -6px; } }
+
+@media screen and (max-width: 800px) {
+  [class$="-key_visual"], [class*="-key_visual "] {
+    padding: 60px 0 65px; } }
+
+.business-key_visual {
+  background-image: url(../img/business/business-bg.png);
+  z-index: -1; }
+
+.business-c-key_visual {
+  background-image: url(../img/business/business-c-bg.png); }
+
+.business-p-key_visual {
+  background-image: url(../img/business/business-p-bg.png); }
+
+.business-r-key_visual {
+  background-image: url(../img/business/business-r-bg.png); }
+
+.member-key_visual {
+  background-image: url(../img/member/member-bg.png); }
+
+.story-key_visual {
+  background-image: url(../img/story/story-bg.png); }
+
+.story-01-key_visual {
+  background-image: url(../img/story/story-01-bg.png); }
+
+.story-02-key_visual {
+  background-image: url(../img/story/story-02-bg.png); }
+
+.company-key_visual {
+  background-image: url(../img/company/company-bg.png); }
+
+.company-h-key_visual {
+  background-image: url(../img/company/company-h-bg.png); }
+
+.company-d-key_visual {
+  background-image: url(../img/company/company-d-bg.png); }
+
+.company-a-key_visual {
+  background-image: url(../img/company/company-a-bg.png); }
+
+.recruit-key_visual {
+  background-image: url(../img/recruit/recruit-bg.png); }
+
+.recruit-m-key_visual {
+  background-image: url(../img/recruit/recruit-m-bg.png);
+  margin-bottom: 0px;
+  min-height: 300px;
+  max-height: 655px;
+  padding-bottom: 16.5%;
+  margin-top: 80px; }
+
+@media screen and (max-width: 1000px) {
+  .recruit-m-key_visual {
+    margin-top: 50px; } }
+
+.recruit-i-key_visual {
+  background-image: url(../img/recruit/recruit-i-bg.png); }
+
+.recruit-f-key_visual {
+  background-image: url(../img/recruit/recruit-f-bg.png); }
+
+.recruit-n-key_visual {
+  background-image: url(../img/recruit/recruit-n-bg.png);
+  z-index: -1; }
+
+@media screen and (max-width: 600px) {
+  [class*="key_visual"] {
+    background-position: left top -10px;
+    background-size: cover; }
+  .business-key_visual {
+    background-image: url(../img/business/sp-business-bg.png);
+    z-index: -1; }
+  .business-c-key_visual {
+    background-image: url(../img/business/sp-business-c-bg.png); }
+  .business-key_visual {
+    background-image: url(../img/business/sp-business-bg.png);
+    z-index: -1; }
+  .business-c-key_visual {
+    background-image: url(../img/business/sp-business-c-bg.png); }
+  .business-p-key_visual {
+    background-image: url(../img/business/sp-business-p-bg.png);
+    z-index: -1; }
+  .business-r-key_visual {
+    background-image: url(../img/business/sp-business-r-bg.png); }
+  .story-key_visual {
+    background-image: url(../img/member/sp-member-bg.png); }
+  .story-1-key_visual {
+    background-image: url(../img/member/sp-member-1-bg.png); }
+  .story-key_visual {
+    background-image: url(../img/story/sp-story-bg.png); }
+  .story-1-key_visual {
+    background-image: url(../img/story/sp-story-1-bg.png); }
+  .story-2-key_visual {
+    background-image: url(../img/story/sp-story-2-bg.png); }
+  .company-key_visual {
+    background-image: url(../img/company/sp-company-bg.png); }
+  .company-h-key_visual {
+    background-image: url(../img/company/sp-company-h-bg.png); }
+  .company-d-key_visual {
+    background-image: url(../img/company/sp-company-d-bg.png); }
+  .company-a-key_visual {
+    background-image: url(../img/company/sp-company-a-bg.png); }
+  .recruit-key_visual {
+    background-image: url(../img/recruit/sp-recruit-bg.png); }
+  .recruit-m-key_visual {
+    background-image: url(../img/recruit/sp-recruit-m-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 283px; }
+  .recruit-i-key_visual {
+    background-image: url(../img/recruit/sp-recruit-i-bg.png);
+    margin-bottom: 7px; }
+  .recruit-f-key_visual {
+    background-image: url(../img/recruit/sp-recruit-f-bg.png);
+    margin-bottom: -35px; }
+  .recruit-n-key_visual {
+    background-image: url(../img/recruit/sp-recruit-n-bg.png);
+    background-position: left top -40px; } }
+
+.key_visual-inner {
+  padding: 207px 0 207px;
+  position: relative; }
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner {
+    padding: 50px 0 37px;
+    position: relative; } }
+
+.key_visual-inner-bread_crumb {
+  font-size: 12px;
+  z-index: 100;
+  position: absolute;
+  top: 25px;
+  left: 8%;
+  text-shadow: 0px 0px 12px #333; }
+  .key_visual-inner-bread_crumb li {
+    display: inline;
+    margin-right: 10px; }
+  .key_visual-inner-bread_crumb a {
+    margin-right: 14px; }
+
+@media screen and (max-width: 1150px) {
+  .key_visual-inner-bread_crumb {
+    display: none; } }
+
+.key_visual-inner-txt-wrapper {
+  text-align: center;
+  padding: 0 29%; }
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper {
+    text-align: center;
+    padding: 0 10%; } }
+
+.key_visual-inner-txt-wrapper-hd {
+  font-size: 40px;
+  letter-spacing: 1.8;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper-hd {
+    font-size: 30px;
+    letter-spacing: 1.8;
+    margin-bottom: 4px; } }
+
+.key_visual-inner-txt-wrapper-sub {
+  margin-bottom: 66px; }
+  .key_visual-inner-txt-wrapper-sub:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 25px auto 0;
+    width: 42px;
+    border-bottom: 1px solid #fff; }
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper-sub {
+    margin-bottom: 24px; }
+    .key_visual-inner-txt-wrapper-sub:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 8px auto 0;
+      width: 42px;
+      border-bottom: 1px solid #fff; } }
+
+.key_visual-inner-txt-wrapper-txt {
+  line-height: 2.2; }
+
+@media screen and (max-width: 600px) {
+  .key_visual-inner-txt-wrapper-txt {
+    font-size: 12px;
+    line-height: 2; } }

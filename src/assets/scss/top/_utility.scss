@@ -1,0 +1,56 @@
+//
+// Utility
+//
+
+/* display */
+.pc-only {
+	@media only screen and (max-width: $point_sp) {
+		display: none !important;
+	}
+}
+.sp-only {
+	display: none !important;
+	@media only screen and (max-width: $point_sp) {
+		display: block !important;;
+	}
+}
+
+/* animation */
+@keyframes scroll_move {
+  0% {
+    top:50%;
+  }
+  76% {
+    top:50%;
+  }
+  85% {
+  	opacity: 1;
+  }
+  90% {
+  	opacity: 0;
+    top:28px;
+  }
+  100% {
+  	opacity: 0;
+  }
+}
+
+@keyframes scroll_move_sp {
+  0% {
+    top:14px;
+  }
+  71% {
+    top:14px;
+  }
+  80% {
+  	opacity: 1;
+  }
+  85% {
+  	opacity: 0;
+    top:6.5px;
+  }
+  100% {
+  	opacity: 0;
+    top:6.5px;
+  }
+}

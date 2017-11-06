@@ -1,0 +1,662 @@
+@-webkit-keyframes fadeInUp--low {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3%, 0);
+    transform: translate3d(0, 3%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp--low {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3%, 0);
+    transform: translate3d(0, 3%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp--low {
+  -webkit-animation-name: fadeInUp--low;
+  animation-name: fadeInUp--low;
+}
+
+
+.company_wrapper {
+  margin: 0 0 58px 0 !important;
+}
+.company_heading {
+  color: #0068b6;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 34px;
+  &__title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 28px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -17px;
+      display: block;
+      width: 35px;
+      border-bottom: 2px solid #0068b6;
+    }
+  }
+}
+
+.company-about-content {
+  position: relative;
+  background-color: #FFF;
+  padding-top: 74px;
+}
+
+.movie_detail {
+  padding: 15px 0 15px 20px;
+  color: #000;
+  font-size: 14px;
+  text-align: left;
+}
+
+.conpany_movies {
+  margin-bottom: 64px;
+}
+
+
+//history
+
+.story_walking_wrapper {
+  position: relative;
+  margin: 0 14px;
+  padding: 22px 15px 0 15px;
+  background-color: #FFF;
+}
+
+.story_walking_content {
+  padding-left: 15px;
+  border-left: 1px dotted #bdbdbd;
+  &__title {
+    color: #0068b5;
+    padding-bottom: 14px;
+    font-size: 14px;
+    text-align: left;
+  }
+  &__item {
+    border-top: 1px solid #bdbdbd;
+    padding: 14px 0 28px 0;
+    &__img {
+      padding-bottom: 15px;
+    }
+    &__txt {
+      color: #333333;
+      font-size: 12px;
+      text-align: left;
+      line-height: 1.8;
+    }
+  }
+}
+
+.story_walking_content__title {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 799px){
+  .company_about_simple{
+    .company_about_table__td, .company_about_table__th {
+      padding: 20px 15px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .story_walking_wrapper {
+    max-width: 1200px;
+    height: 3500px;
+    position: relative;
+    margin: 0 auto;
+    padding: 90px 0 0 0;
+    &:after {
+      content: '';
+      display: block;
+      height: 100%;
+      border-left: 1px dotted #bdbdbd;
+      margin-left: 50%;
+    }
+  }
+  .story_walking_content {
+    padding: 0;
+    border: none;
+    &__simple {
+      max-width: 510px;
+      width: 44%;
+      position: absolute;
+      &:nth-child(odd) {
+        .story_walking_content__title {
+          position: absolute;
+          top: -64px;
+          right: -26%;
+        }
+      }
+      &:nth-child(even) {
+        .story_walking_content__title {
+          position: absolute;
+          top: -64px;
+          left: -19%;
+        }
+      }
+      &--1 {
+        top: 118px;
+        left: 0;
+      }
+      &--2 {
+        top: 385px;
+        right: 0;
+      }
+      &--3 {
+        top: 666px;
+        left: 0;
+      }
+      &--4 {
+        top: 935px;
+        right: 0;
+      }
+      &--5 {
+        top: 1208px;
+        left: 0;
+      }
+      &--6 {
+        top: 1478px;
+        right: 0;
+      }
+      &--7 {
+        top: 1758px;
+        left: 0;
+      }
+      &--8 {
+        top: 2027px;
+        right: 0;
+      }
+      &--9 {
+        top: 2292px;
+        left: 0;
+      }
+      &--10 {
+        top: 2558px;
+        right: 0;
+      }
+      &--11 {
+        top: 2842px;
+        left: 0;
+      }
+    }
+    &__title {
+      padding: 40px 0;
+      margin-left: -50px;
+      font-size: 20px;
+      background-color: #FFF;
+    }
+    &__item {
+      padding: 38px 0 28px 0;
+      &--left {
+        float: left;
+        padding-right: 30px;
+      }
+      &--right {
+        float: right;
+        padding-left: 30px;
+      }
+      &__txt {
+        font-size: 14px;
+      }
+    }
+  }
+  .nengo {
+    display: block;
+    margin-top: 10px;
+    text-indent: 2em;
+  }
+}
+
+//about
+.company_about_wrapper {
+  z-index: 1;
+  background-color: #FFF;
+}
+
+.company_about_table {
+  border: 1px solid #d9dddd;
+  color: #333;
+  margin-bottom: 27px;
+  &__th {
+    min-width: 100px;
+    background-color: #eff4f8;
+  }
+  &__td, &__th {
+    padding: 16px 12px;
+    vertical-align: middle;
+    text-align: left;
+    border-bottom: 1px solid #d9dddd;
+  }
+}
+
+.company_access {
+  max-width: 488px;
+  margin: 0 auto 40px auto;
+  padding: 0 14px;
+  color: #333;
+  text-align: left;
+  line-height: 1.8;
+  &__emp {
+    font-weight: 600;
+  }
+}
+
+#company_access_map_btn {
+  display: inline-block;
+  position: relative;
+  padding: 20px 55px 20px 30px;
+  color: #333;
+  border: 1px solid #000;
+  &:hover {
+    color: #FFF;
+    background-color: #333;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      margin-top: -5px;
+      border: 4px solid transparent;
+      border-left: 6px solid #FFF;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -5px;
+    border: 4px solid transparent;
+    border-left: 6px solid #333;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #company_access_map_btn {
+    padding: 20px 70px 20px 36px;
+  }
+  .company_about_table {
+    margin-bottom: 48px;
+    &__th {
+      width: 14%;
+    }
+    &__td, &__th {
+      padding: 20px 30px;
+    }
+  }
+}
+//data
+
+.company-data-content {
+  max-width: 1200px;
+  margin: 0 15px;
+  &-item {
+    position: relative;
+    padding: 65px;
+    text-align: left;
+    &-title {
+      margin-bottom: 14px !important;
+      letter-spacing: 1px !important;
+      font-size: 14px !important;
+    }
+    &-txt {
+      margin: 14px 0;
+      font-size: 14px !important;
+    }
+    &-img {
+      position: relative;
+      width: 180px;
+      margin: 0 auto;
+      text-align: center;
+      &--multiple {
+        margin-top: 64px;
+      }
+      &-numeric_txt {
+        &--1 {
+          display: inline-table;
+          position: absolute;
+          top: -60px;
+          left: 0;
+        }
+        &--2 {
+          display: inline-table;
+          position: absolute;
+          top: 40px;
+          left: -30px;
+        }
+        &--3 {
+          display: inline-table;
+          position: absolute;
+          top: 70%;
+          left: 60px;
+        }
+        &-title {
+          font-size: 12px;
+          text-align: left;
+          margin-bottom: 5px;
+        }
+        &-prm {
+          display: inline-block;
+          padding: 10px 15px;
+          background-color: #FFF;
+          color: #041036;
+          font-weight: 600;
+          &--emp {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    &-emp {
+      font-size: 20px !important;
+      &--mini {
+        font-size: 10px !important;
+      }
+      &--numeric {
+        font-size: 38px;
+      }
+    }
+    &-emp_txt {
+      display: inline;
+    }
+    &--blue > &-emp, &--dark_blue > &-emp {
+      display: inline-block;
+      padding: 7px 12px;
+      background-color: #FFF;
+      color: #1d78bb;
+      font-weight: 600;
+    }
+    &--blue {
+      background-color: #1d78bb;
+      color: #FFF;
+    }
+    &--dark_blue {
+      background-color: #196fae;
+      color: #FFF;
+    }
+    &--white > &-emp, &--gray > &-emp {
+      display: inline-block;
+      padding: 7px 12px;
+      background-color: #FFF;
+      color: #041036;
+      font-weight: 600;
+    }
+    &--white {
+      background-color: #eef4f8;
+      color: #041036;
+    }
+    &--gray {
+      background-color: #e1e8ed;
+      color: #041036;
+    }
+  }
+}
+
+.campany-d-show_pc {
+  display: none;
+}
+
+@media screen and (max-width: 1099px) {
+  .company-data-content-item {
+    padding: 35px;
+  }
+  .company-data-content-item-img--multiple {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .company-data-content-item-emp--small {
+    font-size: 22px;
+  }
+  .company-data-operating_income-content {
+    position: relative;
+  }
+  .company-data-profit-content-item-title {
+    position: absolute;
+    top: 76px;
+    left: 95px;
+  }
+  .company-data-profit-content-item-txt {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+  .company-data-worker-content {
+    text-align: center;
+  }
+  .company-data-worker-content-item-txt {
+    text-align: left;
+  }
+  .company-data-worker-content {
+    padding: 150px 60px 100px !important;
+  }
+  .company-data-worker-img-a {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+  }
+  .company-data-worker-img-b {
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    right: 0;
+  }
+  .company_about_content {
+    max-width: 955px;
+    margin: 0 auto;
+    background-color: #FFF;
+  }
+  .company-data-content {
+    margin: 0 auto;
+    &--aaa {
+      display: table;
+    }
+    &-item {
+      padding-top: 70px;
+      &-txt {
+        font-size: 16px !important;
+      }
+      &-emp {
+        position: relative;
+        z-index: 100;
+        font-size: 40px !important;
+        &--numeric {
+          font-size: 80px;
+        }
+        &--mini {
+          font-size: 14px !important;
+        }
+      }
+      &-title {
+        margin-bottom: 30px !important;
+        font-size: 36px !important;
+        &--inline {
+          display: inline;
+          margin-right: 30px;
+        }
+      }
+      &--short {
+        display: table-cell;
+        max-width: 380px;
+      }
+      &--half {
+        display: table-cell;
+        width: 50%;
+        height: 530px;
+      }
+      &-img {
+        width: auto;
+        &-numeric_txt {
+          &--1 {
+            display: inline-table;
+            position: absolute;
+            top: -10%;
+            left: -45%;
+          }
+          &--2 {
+            display: inline-table;
+            position: absolute;
+            top: 50%;
+            left: -45%;
+          }
+          &--3 {
+            display: inline-table;
+            position: absolute;
+            top: 70%;
+            left: 55%;
+          }
+          &-prm {
+            display: inline-block;
+            padding: 7px 12px;
+            background-color: #FFF;
+            color: #041036;
+            font-weight: 600;
+            &--emp {
+              font-size: 50px;
+            }
+          }
+          &-title {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &-group {
+      width: 70%;
+      display: table-cell;
+      .company-data-content-item {
+        display: block;
+      }
+    }
+  }
+  .campany-data-office-txt {
+    width: 40%;
+  }
+  .campany-data-office-img {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  .campany-data-office-content {
+    height: 380px;
+  }
+  .campany-d-show_sp {
+    display: none;
+  }
+  .campany-d-show_pc {
+    display: inline;
+  }
+  .company-data-earnings-img {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+  .company-data-earnings-txt {
+    width: 40%;
+  }
+  .company-data-earnings-content {
+    height: 462px;
+  }
+  .company-data-division_sales-txt {
+    width: 40%;
+  }
+  .company-data-division_sales-content {
+    height: 457px;
+  }
+  .company-data-division_sales-img {
+    max-width: 337px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+  .company-data-operating_income-img {
+    max-width: 330px;
+    position: absolute;
+    top: 35%;
+    right: 34px;
+  }
+  .company-data-operating_income-txt {
+    position: absolute;
+    left: 90px;
+    bottom: 50px;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 100;
+  }
+  .company-data-operating_income-content {
+    padding-left: 90px;
+  }
+  .company-data-holiday-txt {
+    width: 50%;
+  }
+  .company-data-holiday-img {
+    position: absolute;
+    top: 70px;
+    right: 8%;
+  }
+  .company-data-holiday-content {
+    height: 472px;
+  }
+  .company-data-childcare-content {
+    height: 494px;
+    padding-top: 90px;
+    padding-left: 450px;
+  }
+  .company-data-childcare-img {
+    max-width: 274px;
+    position: absolute;
+    top: 54px;
+    left: 10%;
+  }
+  .company-data-sub-title {
+    display: block;
+  }
+  .company-data-childcare-title {
+    margin-bottom: 25px;
+  }
+  .company-data-sub-title {
+    font-size: 30px !important;
+    margin-bottom: 10px;
+    &--2 {
+      position: absolute;
+      top: 155px;
+      left: 626px;
+    }
+  }
+  .company-data-content-item-emp--numeric--1 {
+    margin-right: 20px;
+  }
+  .company-data-childcare-txt {
+    position: absolute;
+    width: 75%;
+    left: 10%;
+    bottom: 10%;
+  }
+}
+
+.company-data-worker-item-title {
+  margin-bottom: 20px !important;
+}
